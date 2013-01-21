@@ -1,0 +1,639 @@
+2012/12/25 23:08:11 [error] [php] Use of undefined constant grid - assumed 'grid' (/var/www/usingziicomp/protected/views/site/index.php:18)
+Stack trace:
+#0 /var/www/yii/yii-1.1.12.b600af/framework/web/CController.php(870): SiteController->renderFile()
+#1 /var/www/yii/yii-1.1.12.b600af/framework/web/CController.php(783): SiteController->renderPartial()
+#2 /var/www/usingziicomp/protected/controllers/SiteController.php(32): SiteController->render()
+#3 /var/www/yii/yii-1.1.12.b600af/framework/web/actions/CInlineAction.php(50): SiteController->actionIndex()
+#4 /var/www/yii/yii-1.1.12.b600af/framework/web/CController.php(309): CInlineAction->runWithParams()
+#5 /var/www/yii/yii-1.1.12.b600af/framework/web/CController.php(287): SiteController->runAction()
+#6 /var/www/yii/yii-1.1.12.b600af/framework/web/CController.php(266): SiteController->runActionWithFilters()
+#7 /var/www/yii/yii-1.1.12.b600af/framework/web/CWebApplication.php(283): SiteController->run()
+#8 /var/www/yii/yii-1.1.12.b600af/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#9 /var/www/yii/yii-1.1.12.b600af/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /var/www/usingziicomp/index.php(13): CWebApplication->run()
+REQUEST_URI=/usingziicomp/index.php
+in /var/www/usingziicomp/protected/views/site/index.php (18)
+in /var/www/usingziicomp/protected/controllers/SiteController.php (32)
+in /var/www/usingziicomp/index.php (13)
+2012/12/25 23:14:56 [error] [php] Use of undefined constant grid - assumed 'grid' (/var/www/usingziicomp/protected/views/site/index.php:18)
+Stack trace:
+#0 /var/www/yii/yii-1.1.12.b600af/framework/web/CController.php(870): SiteController->renderFile()
+#1 /var/www/yii/yii-1.1.12.b600af/framework/web/CController.php(783): SiteController->renderPartial()
+#2 /var/www/usingziicomp/protected/controllers/SiteController.php(32): SiteController->render()
+#3 /var/www/yii/yii-1.1.12.b600af/framework/web/actions/CInlineAction.php(50): SiteController->actionIndex()
+#4 /var/www/yii/yii-1.1.12.b600af/framework/web/CController.php(309): CInlineAction->runWithParams()
+#5 /var/www/yii/yii-1.1.12.b600af/framework/web/CController.php(287): SiteController->runAction()
+#6 /var/www/yii/yii-1.1.12.b600af/framework/web/CController.php(266): SiteController->runActionWithFilters()
+#7 /var/www/yii/yii-1.1.12.b600af/framework/web/CWebApplication.php(283): SiteController->run()
+#8 /var/www/yii/yii-1.1.12.b600af/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#9 /var/www/yii/yii-1.1.12.b600af/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /var/www/usingziicomp/index.php(13): CWebApplication->run()
+REQUEST_URI=/usingziicomp/
+in /var/www/usingziicomp/protected/views/site/index.php (18)
+in /var/www/usingziicomp/protected/controllers/SiteController.php (32)
+in /var/www/usingziicomp/index.php (13)
+2012/12/25 23:17:11 [error] [php] Use of undefined constant grid - assumed 'grid' (/var/www/usingziicomp/protected/views/site/index.php:18)
+Stack trace:
+#0 /var/www/yii/yii-1.1.12.b600af/framework/web/CController.php(870): SiteController->renderFile()
+#1 /var/www/yii/yii-1.1.12.b600af/framework/web/CController.php(783): SiteController->renderPartial()
+#2 /var/www/usingziicomp/protected/controllers/SiteController.php(32): SiteController->render()
+#3 /var/www/yii/yii-1.1.12.b600af/framework/web/actions/CInlineAction.php(50): SiteController->actionIndex()
+#4 /var/www/yii/yii-1.1.12.b600af/framework/web/CController.php(309): CInlineAction->runWithParams()
+#5 /var/www/yii/yii-1.1.12.b600af/framework/web/CController.php(287): SiteController->runAction()
+#6 /var/www/yii/yii-1.1.12.b600af/framework/web/CController.php(266): SiteController->runActionWithFilters()
+#7 /var/www/yii/yii-1.1.12.b600af/framework/web/CWebApplication.php(283): SiteController->run()
+#8 /var/www/yii/yii-1.1.12.b600af/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#9 /var/www/yii/yii-1.1.12.b600af/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /var/www/usingziicomp/index.php(13): CWebApplication->run()
+REQUEST_URI=/usingziicomp/
+in /var/www/usingziicomp/protected/views/site/index.php (18)
+in /var/www/usingziicomp/protected/controllers/SiteController.php (32)
+in /var/www/usingziicomp/index.php (13)
+2012/12/26 00:08:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/admin".' in /var/www/yii/yii-1.1.12.b600af/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /var/www/yii/yii-1.1.12.b600af/framework/web/CWebApplication.php(142): CWebApplication->runController('user/admin')
+#1 /var/www/yii/yii-1.1.12.b600af/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/usingziicomp/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/usingziicomp/index.php?r=user/admin
+---
+2012/12/26 00:42:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "ControllerID/ActionID".' in /var/www/yii/yii-1.1.12.b600af/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /var/www/yii/yii-1.1.12.b600af/framework/web/CWebApplication.php(142): CWebApplication->runController('ControllerID/Ac...')
+#1 /var/www/yii/yii-1.1.12.b600af/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/usingziicomp/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/usingziicomp/index.php?r=ControllerID/ActionID
+---
+2012/12/26 00:55:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "GridController/grid/aR".' in /var/www/yii/yii-1.1.12.b600af/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /var/www/yii/yii-1.1.12.b600af/framework/web/CWebApplication.php(142): CWebApplication->runController('GridController/...')
+#1 /var/www/yii/yii-1.1.12.b600af/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/usingziicomp/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/usingziicomp/index.php?r=GridController/grid/aR
+---
+2012/12/26 19:27:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in /var/www/yii/yii-1.1.12.b600af/framework/web/CController.php:484
+Stack trace:
+#0 /var/www/yii/yii-1.1.12.b600af/framework/web/CController.php(271): CController->missingAction('')
+#1 /var/www/yii/yii-1.1.12.b600af/framework/web/CWebApplication.php(283): CController->run('')
+#2 /var/www/yii/yii-1.1.12.b600af/framework/web/CWebApplication.php(142): CWebApplication->runController('grid')
+#3 /var/www/yii/yii-1.1.12.b600af/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/usingziicomp/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/usingziicomp/index.php?r=grid
+---
+2012/12/26 19:31:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in /var/www/yii/yii-1.1.12.b600af/framework/web/CController.php:484
+Stack trace:
+#0 /var/www/yii/yii-1.1.12.b600af/framework/web/CController.php(271): CController->missingAction('')
+#1 /var/www/yii/yii-1.1.12.b600af/framework/web/CWebApplication.php(283): CController->run('')
+#2 /var/www/yii/yii-1.1.12.b600af/framework/web/CWebApplication.php(142): CWebApplication->runController('grid')
+#3 /var/www/yii/yii-1.1.12.b600af/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/usingziicomp/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/usingziicomp/index.php?r=grid
+---
+2012/12/28 04:22:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "aR".' in /var/www/yii/yii-1.1.12.b600af/framework/web/CController.php:484
+Stack trace:
+#0 /var/www/yii/yii-1.1.12.b600af/framework/web/CController.php(271): CController->missingAction('aR')
+#1 /var/www/yii/yii-1.1.12.b600af/framework/web/CWebApplication.php(283): CController->run('aR')
+#2 /var/www/yii/yii-1.1.12.b600af/framework/web/CWebApplication.php(142): CWebApplication->runController('film/aR')
+#3 /var/www/yii/yii-1.1.12.b600af/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/usingziicomp/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/usingziicomp/index.php?r=film/aR
+---
+2012/12/28 04:24:37 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /var/www/yii/yii-1.1.12.b600af/framework/web/CController.php:337
+Stack trace:
+#0 /var/www/yii/yii-1.1.12.b600af/framework/web/CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 /var/www/yii/yii-1.1.12.b600af/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 /var/www/yii/yii-1.1.12.b600af/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#3 /var/www/yii/yii-1.1.12.b600af/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#4 /var/www/yii/yii-1.1.12.b600af/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 /var/www/yii/yii-1.1.12.b600af/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 /var/www/yii/yii-1.1.12.b600af/framework/web/CController.php(292): CFilterChain->run()
+#7 /var/www/yii/yii-1.1.12.b600af/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /var/www/yii/yii-1.1.12.b600af/framework/web/CWebApplication.php(283): CController->run('View')
+#9 /var/www/yii/yii-1.1.12.b600af/framework/web/CWebApplication.php(142): CWebApplication->runController('film/View')
+#10 /var/www/yii/yii-1.1.12.b600af/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#11 /var/www/usingziicomp/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/usingziicomp/index.php?r=film/View
+---
+2012/12/28 04:24:43 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /var/www/yii/yii-1.1.12.b600af/framework/web/CController.php:337
+Stack trace:
+#0 /var/www/yii/yii-1.1.12.b600af/framework/web/CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 /var/www/yii/yii-1.1.12.b600af/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 /var/www/yii/yii-1.1.12.b600af/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#3 /var/www/yii/yii-1.1.12.b600af/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#4 /var/www/yii/yii-1.1.12.b600af/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 /var/www/yii/yii-1.1.12.b600af/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 /var/www/yii/yii-1.1.12.b600af/framework/web/CController.php(292): CFilterChain->run()
+#7 /var/www/yii/yii-1.1.12.b600af/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /var/www/yii/yii-1.1.12.b600af/framework/web/CWebApplication.php(283): CController->run('view')
+#9 /var/www/yii/yii-1.1.12.b600af/framework/web/CWebApplication.php(142): CWebApplication->runController('film/view')
+#10 /var/www/yii/yii-1.1.12.b600af/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#11 /var/www/usingziicomp/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/usingziicomp/index.php?r=film/view
+---
+2012/12/28 04:24:47 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /var/www/yii/yii-1.1.12.b600af/framework/web/CController.php:337
+Stack trace:
+#0 /var/www/yii/yii-1.1.12.b600af/framework/web/CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 /var/www/yii/yii-1.1.12.b600af/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 /var/www/yii/yii-1.1.12.b600af/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#3 /var/www/yii/yii-1.1.12.b600af/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#4 /var/www/yii/yii-1.1.12.b600af/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 /var/www/yii/yii-1.1.12.b600af/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 /var/www/yii/yii-1.1.12.b600af/framework/web/CController.php(292): CFilterChain->run()
+#7 /var/www/yii/yii-1.1.12.b600af/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /var/www/yii/yii-1.1.12.b600af/framework/web/CWebApplication.php(283): CController->run('View')
+#9 /var/www/yii/yii-1.1.12.b600af/framework/web/CWebApplication.php(142): CWebApplication->runController('film/View')
+#10 /var/www/yii/yii-1.1.12.b600af/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#11 /var/www/usingziicomp/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/usingziicomp/index.php?r=film/View
+---
+2012/12/28 04:28:44 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /var/www/yii/yii-1.1.12.b600af/framework/web/CController.php:337
+Stack trace:
+#0 /var/www/yii/yii-1.1.12.b600af/framework/web/CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 /var/www/yii/yii-1.1.12.b600af/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 /var/www/yii/yii-1.1.12.b600af/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#3 /var/www/yii/yii-1.1.12.b600af/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#4 /var/www/yii/yii-1.1.12.b600af/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 /var/www/yii/yii-1.1.12.b600af/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 /var/www/yii/yii-1.1.12.b600af/framework/web/CController.php(292): CFilterChain->run()
+#7 /var/www/yii/yii-1.1.12.b600af/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /var/www/yii/yii-1.1.12.b600af/framework/web/CWebApplication.php(283): CController->run('View')
+#9 /var/www/yii/yii-1.1.12.b600af/framework/web/CWebApplication.php(142): CWebApplication->runController('film/View')
+#10 /var/www/yii/yii-1.1.12.b600af/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#11 /var/www/usingziicomp/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/usingziicomp/index.php?r=film/View
+---
+2012/12/28 04:28:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "aR".' in /var/www/yii/yii-1.1.12.b600af/framework/web/CController.php:484
+Stack trace:
+#0 /var/www/yii/yii-1.1.12.b600af/framework/web/CController.php(271): CController->missingAction('aR')
+#1 /var/www/yii/yii-1.1.12.b600af/framework/web/CWebApplication.php(283): CController->run('aR')
+#2 /var/www/yii/yii-1.1.12.b600af/framework/web/CWebApplication.php(142): CWebApplication->runController('film/aR')
+#3 /var/www/yii/yii-1.1.12.b600af/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/usingziicomp/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/usingziicomp/index.php?r=film/aR
+---
+2012/12/28 04:28:58 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /var/www/yii/yii-1.1.12.b600af/framework/web/CController.php:337
+Stack trace:
+#0 /var/www/yii/yii-1.1.12.b600af/framework/web/CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 /var/www/yii/yii-1.1.12.b600af/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 /var/www/yii/yii-1.1.12.b600af/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#3 /var/www/yii/yii-1.1.12.b600af/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#4 /var/www/yii/yii-1.1.12.b600af/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 /var/www/yii/yii-1.1.12.b600af/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 /var/www/yii/yii-1.1.12.b600af/framework/web/CController.php(292): CFilterChain->run()
+#7 /var/www/yii/yii-1.1.12.b600af/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /var/www/yii/yii-1.1.12.b600af/framework/web/CWebApplication.php(283): CController->run('View')
+#9 /var/www/yii/yii-1.1.12.b600af/framework/web/CWebApplication.php(142): CWebApplication->runController('film/View')
+#10 /var/www/yii/yii-1.1.12.b600af/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#11 /var/www/usingziicomp/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/usingziicomp/index.php?r=film/View
+---
+2012/12/28 04:33:06 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /var/www/yii/yii-1.1.12.b600af/framework/web/CController.php:337
+Stack trace:
+#0 /var/www/yii/yii-1.1.12.b600af/framework/web/CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 /var/www/yii/yii-1.1.12.b600af/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 /var/www/yii/yii-1.1.12.b600af/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#3 /var/www/yii/yii-1.1.12.b600af/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#4 /var/www/yii/yii-1.1.12.b600af/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 /var/www/yii/yii-1.1.12.b600af/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 /var/www/yii/yii-1.1.12.b600af/framework/web/CController.php(292): CFilterChain->run()
+#7 /var/www/yii/yii-1.1.12.b600af/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /var/www/yii/yii-1.1.12.b600af/framework/web/CWebApplication.php(283): CController->run('View')
+#9 /var/www/yii/yii-1.1.12.b600af/framework/web/CWebApplication.php(142): CWebApplication->runController('film/View')
+#10 /var/www/yii/yii-1.1.12.b600af/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#11 /var/www/usingziicomp/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/usingziicomp/index.php?r=film/View
+---
+2012/12/28 04:33:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "aR".' in /var/www/yii/yii-1.1.12.b600af/framework/web/CController.php:484
+Stack trace:
+#0 /var/www/yii/yii-1.1.12.b600af/framework/web/CController.php(271): CController->missingAction('aR')
+#1 /var/www/yii/yii-1.1.12.b600af/framework/web/CWebApplication.php(283): CController->run('aR')
+#2 /var/www/yii/yii-1.1.12.b600af/framework/web/CWebApplication.php(142): CWebApplication->runController('film/aR')
+#3 /var/www/yii/yii-1.1.12.b600af/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/usingziicomp/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/usingziicomp/index.php?r=film/aR
+---
+2012/12/28 15:09:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "array".' in /var/www/yii/yii-1.1.12.b600af/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /var/www/yii/yii-1.1.12.b600af/framework/web/CWebApplication.php(142): CWebApplication->runController('array')
+#1 /var/www/yii/yii-1.1.12.b600af/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/usingziicomp/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/usingziicomp/index.php?r=array
+---
+2012/12/28 15:09:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "array".' in /var/www/yii/yii-1.1.12.b600af/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /var/www/yii/yii-1.1.12.b600af/framework/web/CWebApplication.php(142): CWebApplication->runController('array')
+#1 /var/www/yii/yii-1.1.12.b600af/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/usingziicomp/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/usingziicomp/index.php?r=array
+---
+2012/12/29 18:48:29 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'sakila.Film' doesn't exist. The SQL statement executed was: SHOW COLUMNS FROM `Film`.
+in /var/www/usingziicomp/index.php (13)
+2012/12/29 18:52:59 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'sakila.Film' doesn't exist. The SQL statement executed was: SHOW COLUMNS FROM `Film`.
+in /var/www/usingziicomp/index.php (13)
+2012/12/29 18:57:54 [warning] [application] Failed to set unsafe attribute "special_memo" of "Film".
+in /var/www/usingziicomp/protected/controllers/FilmController.php (96)
+in /var/www/usingziicomp/index.php (13)
+2012/12/29 18:58:12 [warning] [application] Failed to set unsafe attribute "special_memo" of "Film".
+in /var/www/usingziicomp/protected/controllers/FilmController.php (96)
+in /var/www/usingziicomp/index.php (13)
+2012/12/29 19:04:01 [warning] [application] Failed to set unsafe attribute "special_memo" of "Film".
+in /var/www/usingziicomp/protected/controllers/FilmController.php (72)
+in /var/www/usingziicomp/index.php (13)
+2012/12/29 19:04:32 [warning] [application] Failed to set unsafe attribute "special_memo" of "Film".
+in /var/www/usingziicomp/protected/controllers/FilmController.php (72)
+in /var/www/usingziicomp/index.php (13)
+2012/12/29 19:04:53 [warning] [application] Failed to set unsafe attribute "special_memo" of "Film".
+in /var/www/usingziicomp/protected/controllers/FilmController.php (96)
+in /var/www/usingziicomp/index.php (13)
+2012/12/29 19:07:36 [warning] [application] Failed to set unsafe attribute "special_memo" of "Film".
+in /var/www/usingziicomp/protected/controllers/FilmController.php (96)
+in /var/www/usingziicomp/index.php (13)
+2012/12/29 19:08:23 [warning] [application] Failed to set unsafe attribute "special_memo" of "Film".
+in /var/www/usingziicomp/protected/controllers/FilmController.php (96)
+in /var/www/usingziicomp/index.php (13)
+2012/12/29 19:11:28 [warning] [application] Failed to set unsafe attribute "special_memo" of "Film".
+in /var/www/usingziicomp/protected/controllers/FilmController.php (96)
+in /var/www/usingziicomp/index.php (13)
+2012/12/29 19:12:12 [warning] [application] Failed to set unsafe attribute "special_memo" of "Film".
+in /var/www/usingziicomp/protected/controllers/FilmController.php (96)
+in /var/www/usingziicomp/index.php (13)
+2012/12/29 19:12:42 [warning] [application] Failed to set unsafe attribute "special_memo" of "Film".
+in /var/www/usingziicomp/protected/controllers/FilmController.php (96)
+in /var/www/usingziicomp/index.php (13)
+2012/12/29 19:24:50 [warning] [application] Failed to set unsafe attribute "special_memo" of "Film".
+in /var/www/usingziicomp/protected/controllers/FilmController.php (96)
+in /var/www/usingziicomp/index.php (13)
+2012/12/29 19:33:42 [warning] [application] Failed to set unsafe attribute "special_memo" of "Film".
+in /var/www/usingziicomp/protected/controllers/FilmController.php (96)
+in /var/www/usingziicomp/index.php (13)
+2012/12/29 19:37:24 [warning] [application] Failed to set unsafe attribute "special_memo" of "Film".
+in /var/www/usingziicomp/protected/controllers/FilmController.php (96)
+in /var/www/usingziicomp/index.php (13)
+2012/12/29 19:45:26 [warning] [application] Failed to set unsafe attribute "special_memo" of "Film".
+in /var/www/usingziicomp/protected/controllers/FilmController.php (96)
+in /var/www/usingziicomp/index.php (13)
+2012/12/29 19:56:36 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'sakila.Film' doesn't exist. The SQL statement executed was: SHOW COLUMNS FROM `Film`.
+in /var/www/usingziicomp/index.php (13)
+2012/12/29 19:57:39 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'sakila.Film' doesn't exist. The SQL statement executed was: SHOW COLUMNS FROM `Film`.
+in /var/www/usingziicomp/index.php (13)
+2012/12/29 19:59:07 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'sakila.Film' doesn't exist. The SQL statement executed was: SHOW COLUMNS FROM `Film`.
+in /var/www/usingziicomp/index.php (13)
+2012/12/29 19:59:54 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'sakila.Film' doesn't exist. The SQL statement executed was: SHOW COLUMNS FROM `Film`.
+in /var/www/usingziicomp/index.php (13)
+2012/12/29 21:19:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "film/view".' in /var/www/yii/yii-1.1.12.b600af/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /var/www/yii/yii-1.1.12.b600af/framework/web/CWebApplication.php(142): CWebApplication->runController('film/view')
+#1 /var/www/yii/yii-1.1.12.b600af/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/usingziicomp/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/usingziicomp/index.php?r=film/view&id=1
+HTTP_REFERER=http://localhost/usingziicomp/index.php?r=film/update&id=1
+---
+2012/12/29 21:30:34 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'sakila.Film' doesn't exist. The SQL statement executed was: SHOW COLUMNS FROM `Film`.
+in /var/www/usingziicomp/index.php (13)
+2012/12/29 21:32:23 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'sakila.Film' doesn't exist. The SQL statement executed was: SHOW COLUMNS FROM `Film`.
+in /var/www/usingziicomp/index.php (13)
+2012/12/29 21:44:02 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'sakila.Film' doesn't exist. The SQL statement executed was: SHOW COLUMNS FROM `Film`.
+in /var/www/usingziicomp/index.php (13)
+2012/12/29 21:44:29 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'sakila.Film' doesn't exist. The SQL statement executed was: SHOW COLUMNS FROM `Film`.
+in /var/www/usingziicomp/index.php (13)
+2012/12/29 21:46:15 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'sakila.Film' doesn't exist. The SQL statement executed was: SHOW COLUMNS FROM `Film`.
+in /var/www/usingziicomp/index.php (13)
+2012/12/29 21:50:06 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'sakila.Film' doesn't exist. The SQL statement executed was: SHOW COLUMNS FROM `Film`.
+in /var/www/usingziicomp/index.php (13)
+2012/12/30 17:50:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in /var/www/yii/yii-1.1.12.b600af/framework/web/CController.php:484
+Stack trace:
+#0 /var/www/yii/yii-1.1.12.b600af/framework/web/CController.php(271): CController->missingAction('')
+#1 /var/www/yii/yii-1.1.12.b600af/framework/web/CWebApplication.php(283): CController->run('')
+#2 /var/www/yii/yii-1.1.12.b600af/framework/web/CWebApplication.php(142): CWebApplication->runController('grid/')
+#3 /var/www/yii/yii-1.1.12.b600af/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/usingziicomp/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/usingziicomp/index.php?r=grid/
+---
+2012/12/30 17:50:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in /var/www/yii/yii-1.1.12.b600af/framework/web/CController.php:484
+Stack trace:
+#0 /var/www/yii/yii-1.1.12.b600af/framework/web/CController.php(271): CController->missingAction('')
+#1 /var/www/yii/yii-1.1.12.b600af/framework/web/CWebApplication.php(283): CController->run('')
+#2 /var/www/yii/yii-1.1.12.b600af/framework/web/CWebApplication.php(142): CWebApplication->runController('grid')
+#3 /var/www/yii/yii-1.1.12.b600af/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/usingziicomp/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/usingziicomp/index.php?r=grid
+---
+2012/12/30 17:51:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "aR".' in /var/www/yii/yii-1.1.12.b600af/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /var/www/yii/yii-1.1.12.b600af/framework/web/CWebApplication.php(142): CWebApplication->runController('aR')
+#1 /var/www/yii/yii-1.1.12.b600af/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/usingziicomp/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/usingziicomp/index.php?r=aR
+---
+2012/12/30 18:58:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "grid".' in /var/www/yii/yii-1.1.12.b600af/framework/web/CController.php:484
+Stack trace:
+#0 /var/www/yii/yii-1.1.12.b600af/framework/web/CController.php(271): CController->missingAction('grid')
+#1 /var/www/yii/yii-1.1.12.b600af/framework/web/CWebApplication.php(283): CController->run('grid')
+#2 /var/www/yii/yii-1.1.12.b600af/framework/web/CWebApplication.php(142): CWebApplication->runController('grid/grid')
+#3 /var/www/yii/yii-1.1.12.b600af/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/usingziicomp/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/usingziicomp/index.php?r=grid/grid
+---
+2012/12/30 19:10:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "film".' in /var/www/yii/yii-1.1.12.b600af/framework/web/CController.php:484
+Stack trace:
+#0 /var/www/yii/yii-1.1.12.b600af/framework/web/CController.php(271): CController->missingAction('film')
+#1 /var/www/yii/yii-1.1.12.b600af/framework/web/CWebApplication.php(283): CController->run('film')
+#2 /var/www/yii/yii-1.1.12.b600af/framework/web/CWebApplication.php(142): CWebApplication->runController('grid/film')
+#3 /var/www/yii/yii-1.1.12.b600af/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/usingziicomp/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/usingziicomp/index.php?r=grid/film
+---
+2013/01/02 17:20:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in /var/www/yii/yii-1.1.12.b600af/framework/web/CController.php:484
+Stack trace:
+#0 /var/www/yii/yii-1.1.12.b600af/framework/web/CController.php(271): CController->missingAction('')
+#1 /var/www/yii/yii-1.1.12.b600af/framework/web/CWebApplication.php(283): CController->run('')
+#2 /var/www/yii/yii-1.1.12.b600af/framework/web/CWebApplication.php(142): CWebApplication->runController('grid/')
+#3 /var/www/yii/yii-1.1.12.b600af/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/usingziicomp/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/usingziicomp/index.php?r=grid/
+---
+2013/01/02 17:20:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in /var/www/yii/yii-1.1.12.b600af/framework/web/CController.php:484
+Stack trace:
+#0 /var/www/yii/yii-1.1.12.b600af/framework/web/CController.php(271): CController->missingAction('')
+#1 /var/www/yii/yii-1.1.12.b600af/framework/web/CWebApplication.php(283): CController->run('')
+#2 /var/www/yii/yii-1.1.12.b600af/framework/web/CWebApplication.php(142): CWebApplication->runController('grid')
+#3 /var/www/yii/yii-1.1.12.b600af/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/usingziicomp/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/usingziicomp/index.php?r=grid
+---
+2013/01/02 17:21:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "aR".' in /var/www/yii/yii-1.1.12.b600af/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /var/www/yii/yii-1.1.12.b600af/framework/web/CWebApplication.php(142): CWebApplication->runController('aR')
+#1 /var/www/yii/yii-1.1.12.b600af/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/usingziicomp/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/usingziicomp/index.php?r=aR
+---
+2013/01/02 17:22:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in /var/www/yii/yii-1.1.12.b600af/framework/web/CController.php:484
+Stack trace:
+#0 /var/www/yii/yii-1.1.12.b600af/framework/web/CController.php(271): CController->missingAction('')
+#1 /var/www/yii/yii-1.1.12.b600af/framework/web/CWebApplication.php(283): CController->run('')
+#2 /var/www/yii/yii-1.1.12.b600af/framework/web/CWebApplication.php(142): CWebApplication->runController('grid/')
+#3 /var/www/yii/yii-1.1.12.b600af/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/usingziicomp/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/usingziicomp/index.php?r=grid/
+---
+2013/01/02 17:38:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in /var/www/yii/yii-1.1.12.b600af/framework/web/CController.php:484
+Stack trace:
+#0 /var/www/yii/yii-1.1.12.b600af/framework/web/CController.php(271): CController->missingAction('')
+#1 /var/www/yii/yii-1.1.12.b600af/framework/web/CWebApplication.php(283): CController->run('')
+#2 /var/www/yii/yii-1.1.12.b600af/framework/web/CWebApplication.php(142): CWebApplication->runController('grid')
+#3 /var/www/yii/yii-1.1.12.b600af/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/usingziicomp/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/usingziicomp/index.php?r=grid
+---
+2013/01/02 17:38:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "ar".' in /var/www/yii/yii-1.1.12.b600af/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /var/www/yii/yii-1.1.12.b600af/framework/web/CWebApplication.php(142): CWebApplication->runController('ar')
+#1 /var/www/yii/yii-1.1.12.b600af/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/usingziicomp/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/usingziicomp/index.php?r=ar
+---
+2013/01/02 18:22:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in /var/www/yii/yii-1.1.12.b600af/framework/web/CController.php:484
+Stack trace:
+#0 /var/www/yii/yii-1.1.12.b600af/framework/web/CController.php(271): CController->missingAction('')
+#1 /var/www/yii/yii-1.1.12.b600af/framework/web/CWebApplication.php(283): CController->run('')
+#2 /var/www/yii/yii-1.1.12.b600af/framework/web/CWebApplication.php(142): CWebApplication->runController('grid/')
+#3 /var/www/yii/yii-1.1.12.b600af/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/usingziicomp/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/usingziicomp/index.php?r=grid/
+---
+2013/01/02 18:24:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in /var/www/yii/yii-1.1.12.b600af/framework/web/CController.php:484
+Stack trace:
+#0 /var/www/yii/yii-1.1.12.b600af/framework/web/CController.php(271): CController->missingAction('')
+#1 /var/www/yii/yii-1.1.12.b600af/framework/web/CWebApplication.php(283): CController->run('')
+#2 /var/www/yii/yii-1.1.12.b600af/framework/web/CWebApplication.php(142): CWebApplication->runController('grid/')
+#3 /var/www/yii/yii-1.1.12.b600af/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/usingziicomp/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/usingziicomp/index.php?r=grid/
+---
+2013/01/02 18:24:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in /var/www/yii/yii-1.1.12.b600af/framework/web/CController.php:484
+Stack trace:
+#0 /var/www/yii/yii-1.1.12.b600af/framework/web/CController.php(271): CController->missingAction('')
+#1 /var/www/yii/yii-1.1.12.b600af/framework/web/CWebApplication.php(283): CController->run('')
+#2 /var/www/yii/yii-1.1.12.b600af/framework/web/CWebApplication.php(142): CWebApplication->runController('grid/')
+#3 /var/www/yii/yii-1.1.12.b600af/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/usingziicomp/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/usingziicomp/index.php?r=grid/
+---
+2013/01/02 18:26:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in /var/www/yii/yii-1.1.12.b600af/framework/web/CController.php:484
+Stack trace:
+#0 /var/www/yii/yii-1.1.12.b600af/framework/web/CController.php(271): CController->missingAction('')
+#1 /var/www/yii/yii-1.1.12.b600af/framework/web/CWebApplication.php(283): CController->run('')
+#2 /var/www/yii/yii-1.1.12.b600af/framework/web/CWebApplication.php(142): CWebApplication->runController('grid')
+#3 /var/www/yii/yii-1.1.12.b600af/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/usingziicomp/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/usingziicomp/index.php?r=grid
+---
+2013/01/02 18:37:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "aR".' in /var/www/yii/yii-1.1.12.b600af/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /var/www/yii/yii-1.1.12.b600af/framework/web/CWebApplication.php(142): CWebApplication->runController('aR')
+#1 /var/www/yii/yii-1.1.12.b600af/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/usingziicomp/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/usingziicomp/index.php?r=aR
+---
+2013/01/02 18:39:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in /var/www/yii/yii-1.1.12.b600af/framework/web/CController.php:484
+Stack trace:
+#0 /var/www/yii/yii-1.1.12.b600af/framework/web/CController.php(271): CController->missingAction('')
+#1 /var/www/yii/yii-1.1.12.b600af/framework/web/CWebApplication.php(283): CController->run('')
+#2 /var/www/yii/yii-1.1.12.b600af/framework/web/CWebApplication.php(142): CWebApplication->runController('grid')
+#3 /var/www/yii/yii-1.1.12.b600af/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/usingziicomp/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/usingziicomp/index.php?r=grid
+---
+2013/01/02 18:41:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "aR".' in /var/www/yii/yii-1.1.12.b600af/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /var/www/yii/yii-1.1.12.b600af/framework/web/CWebApplication.php(142): CWebApplication->runController('aR')
+#1 /var/www/yii/yii-1.1.12.b600af/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/usingziicomp/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/usingziicomp/index.php?r=aR
+---
+2013/01/02 18:52:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "aR".' in /var/www/yii/yii-1.1.12.b600af/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /var/www/yii/yii-1.1.12.b600af/framework/web/CWebApplication.php(142): CWebApplication->runController('aR')
+#1 /var/www/yii/yii-1.1.12.b600af/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/usingziicomp/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/usingziicomp/index.php?r=aR
+---
+2013/01/02 21:29:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in /var/www/yii/yii-1.1.12.b600af/framework/web/CController.php:484
+Stack trace:
+#0 /var/www/yii/yii-1.1.12.b600af/framework/web/CController.php(271): CController->missingAction('')
+#1 /var/www/yii/yii-1.1.12.b600af/framework/web/CWebApplication.php(283): CController->run('')
+#2 /var/www/yii/yii-1.1.12.b600af/framework/web/CWebApplication.php(142): CWebApplication->runController('grid/')
+#3 /var/www/yii/yii-1.1.12.b600af/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/usingziicomp/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/usingziicomp/index.php?r=grid/
+---
+2013/01/02 21:29:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in /var/www/yii/yii-1.1.12.b600af/framework/web/CController.php:484
+Stack trace:
+#0 /var/www/yii/yii-1.1.12.b600af/framework/web/CController.php(271): CController->missingAction('')
+#1 /var/www/yii/yii-1.1.12.b600af/framework/web/CWebApplication.php(283): CController->run('')
+#2 /var/www/yii/yii-1.1.12.b600af/framework/web/CWebApplication.php(142): CWebApplication->runController('grid')
+#3 /var/www/yii/yii-1.1.12.b600af/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/usingziicomp/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/usingziicomp/index.php?r=grid
+---
+2013/01/03 18:46:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "array".' in /var/www/yii/yii-1.1.12.b600af/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /var/www/yii/yii-1.1.12.b600af/framework/web/CWebApplication.php(142): CWebApplication->runController('array')
+#1 /var/www/yii/yii-1.1.12.b600af/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/usingziicomp/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/usingziicomp/index.php?r=array
+---
+2013/01/07 17:34:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "ar".' in /var/www/yii/yii-1.1.12.b600af/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /var/www/yii/yii-1.1.12.b600af/framework/web/CWebApplication.php(142): CWebApplication->runController('ar')
+#1 /var/www/yii/yii-1.1.12.b600af/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/usingziicomp/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/usingziicomp/index.php?r=ar
+---
+2013/01/07 22:57:00 [error] [php] Use of undefined constant id - assumed 'id' (/var/www/usingziicomp/protected/controllers/GridController.php:129)
+Stack trace:
+#0 /var/www/yii/yii-1.1.12.b600af/framework/web/CController.php(287): GridController->runAction()
+#1 /var/www/yii/yii-1.1.12.b600af/framework/web/CController.php(266): GridController->runActionWithFilters()
+#2 /var/www/yii/yii-1.1.12.b600af/framework/web/CWebApplication.php(283): GridController->run()
+#3 /var/www/yii/yii-1.1.12.b600af/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#4 /var/www/yii/yii-1.1.12.b600af/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#5 /var/www/usingziicomp/index.php(13): CWebApplication->run()
+REQUEST_URI=/usingziicomp/index.php?r=grid/sql
+in /var/www/usingziicomp/protected/controllers/GridController.php (129)
+in /var/www/usingziicomp/index.php (13)
+2013/01/07 23:01:22 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'id' in 'order clause'. The SQL statement executed was: SELECT * FROM film ORDER BY title, id DESC LIMIT 10.
+in /var/www/usingziicomp/protected/views/grid/index.php (3)
+in /var/www/usingziicomp/protected/controllers/GridController.php (139)
+in /var/www/usingziicomp/index.php (13)
+2013/01/07 23:01:22 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'id' in 'order clause'. The SQL statement executed was: SELECT * FROM film ORDER BY title, id DESC LIMIT 10' in /var/www/yii/yii-1.1.12.b600af/framework/db/CDbCommand.php:528
+Stack trace:
+#0 /var/www/yii/yii-1.1.12.b600af/framework/db/CDbCommand.php(390): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 /var/www/yii/yii-1.1.12.b600af/framework/web/CSqlDataProvider.php(105): CDbCommand->queryAll()
+#2 /var/www/yii/yii-1.1.12.b600af/framework/web/CDataProvider.php(137): CSqlDataProvider->fetchData()
+#3 /var/www/yii/yii-1.1.12.b600af/framework/zii/widgets/CBaseListView.php(108): CDataProvider->getData()
+#4 /var/www/yii/yii-1.1.12.b600af/framework/zii/widgets/grid/CGridView.php(289): CBaseListView->init()
+#5 /var/www/yii/yii-1.1.12.b600af/framework/web/CBaseController.php(148): CGridView->init()
+#6 /var/www/yii/yii-1.1.12.b600af/framework/web/CBaseController.php(173): CBaseController->createWidget('zii.widgets.gri...', Array)
+#7 /var/www/usingziicomp/protected/views/grid/index.php(3): CBaseController->widget('zii.widgets.gri...', Array)
+#8 /var/www/yii/yii-1.1.12.b600af/framework/web/CBaseController.php(127): require('/var/www/usingz...')
+#9 /var/www/yii/yii-1.1.12.b600af/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/usingz...', Array, true)
+#10 /var/www/yii/yii-1.1.12.b600af/framework/web/CController.php(870): CBaseController->renderFile('/var/www/usingz...', Array, true)
+#11 /var/www/yii/yii-1.1.12.b600af/framework/web/CController.php(783): CController->renderPartial('index', Array, true)
+#12 /var/www/usingziicomp/protected/controllers/GridController.php(139): CController->render('index', Array)
+#13 /var/www/yii/yii-1.1.12.b600af/framework/web/actions/CInlineAction.php(50): GridController->actionSQL()
+#14 /var/www/yii/yii-1.1.12.b600af/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#15 /var/www/yii/yii-1.1.12.b600af/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#16 /var/www/yii/yii-1.1.12.b600af/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 /var/www/yii/yii-1.1.12.b600af/framework/web/CWebApplication.php(283): CController->run('sql')
+#18 /var/www/yii/yii-1.1.12.b600af/framework/web/CWebApplication.php(142): CWebApplication->runController('grid/sql')
+#19 /var/www/yii/yii-1.1.12.b600af/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#20 /var/www/usingziicomp/index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/usingziicomp/index.php?r=grid/sql
+---
+2013/01/07 23:03:25 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'active' in 'order clause'. The SQL statement executed was: SELECT * FROM film ORDER BY title, active DESC LIMIT 10.
+in /var/www/usingziicomp/protected/views/grid/index.php (3)
+in /var/www/usingziicomp/protected/controllers/GridController.php (139)
+in /var/www/usingziicomp/index.php (13)
+2013/01/07 23:03:25 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'active' in 'order clause'. The SQL statement executed was: SELECT * FROM film ORDER BY title, active DESC LIMIT 10' in /var/www/yii/yii-1.1.12.b600af/framework/db/CDbCommand.php:528
+Stack trace:
+#0 /var/www/yii/yii-1.1.12.b600af/framework/db/CDbCommand.php(390): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 /var/www/yii/yii-1.1.12.b600af/framework/web/CSqlDataProvider.php(105): CDbCommand->queryAll()
+#2 /var/www/yii/yii-1.1.12.b600af/framework/web/CDataProvider.php(137): CSqlDataProvider->fetchData()
+#3 /var/www/yii/yii-1.1.12.b600af/framework/zii/widgets/CBaseListView.php(108): CDataProvider->getData()
+#4 /var/www/yii/yii-1.1.12.b600af/framework/zii/widgets/grid/CGridView.php(289): CBaseListView->init()
+#5 /var/www/yii/yii-1.1.12.b600af/framework/web/CBaseController.php(148): CGridView->init()
+#6 /var/www/yii/yii-1.1.12.b600af/framework/web/CBaseController.php(173): CBaseController->createWidget('zii.widgets.gri...', Array)
+#7 /var/www/usingziicomp/protected/views/grid/index.php(3): CBaseController->widget('zii.widgets.gri...', Array)
+#8 /var/www/yii/yii-1.1.12.b600af/framework/web/CBaseController.php(127): require('/var/www/usingz...')
+#9 /var/www/yii/yii-1.1.12.b600af/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/usingz...', Array, true)
+#10 /var/www/yii/yii-1.1.12.b600af/framework/web/CController.php(870): CBaseController->renderFile('/var/www/usingz...', Array, true)
+#11 /var/www/yii/yii-1.1.12.b600af/framework/web/CController.php(783): CController->renderPartial('index', Array, true)
+#12 /var/www/usingziicomp/protected/controllers/GridController.php(139): CController->render('index', Array)
+#13 /var/www/yii/yii-1.1.12.b600af/framework/web/actions/CInlineAction.php(50): GridController->actionSQL()
+#14 /var/www/yii/yii-1.1.12.b600af/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#15 /var/www/yii/yii-1.1.12.b600af/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#16 /var/www/yii/yii-1.1.12.b600af/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 /var/www/yii/yii-1.1.12.b600af/framework/web/CWebApplication.php(283): CController->run('sql')
+#18 /var/www/yii/yii-1.1.12.b600af/framework/web/CWebApplication.php(142): CWebApplication->runController('grid/sql')
+#19 /var/www/yii/yii-1.1.12.b600af/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#20 /var/www/usingziicomp/index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/usingziicomp/index.php?r=grid/sql
+---
+2013/01/07 23:08:23 [error] [php] Use of undefined constant t - assumed 't' (/var/www/usingziicomp/protected/controllers/GridController.php:131)
+Stack trace:
+#0 /var/www/yii/yii-1.1.12.b600af/framework/web/CController.php(287): GridController->runAction()
+#1 /var/www/yii/yii-1.1.12.b600af/framework/web/CController.php(266): GridController->runActionWithFilters()
+#2 /var/www/yii/yii-1.1.12.b600af/framework/web/CWebApplication.php(283): GridController->run()
+#3 /var/www/yii/yii-1.1.12.b600af/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#4 /var/www/yii/yii-1.1.12.b600af/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#5 /var/www/usingziicomp/index.php(13): CWebApplication->run()
+REQUEST_URI=/usingziicomp/index.php?r=grid/sql
+in /var/www/usingziicomp/protected/controllers/GridController.php (131)
+in /var/www/usingziicomp/index.php (13)
+2013/01/08 00:23:12 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`sakila`.`film`, CONSTRAINT `fk_film_language_original` FOREIGN KEY (`original_language_id`) REFERENCES `language` (`language_id`) ON UPDATE CASCADE). The SQL statement executed was: INSERT INTO `film` (`special_memo`, `rental_duration`, `rental_rate`, `replacement_cost`, `rating`, `title`, `type_of_film`, `introduction_context`, `description`, `release_year`, `language_id`, `original_language_id`, `length`, `special_features`, `last_update`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8, :yp9, :yp10, :yp11, :yp12, :yp13, :yp14).
+in /var/www/usingziicomp/protected/controllers/FilmController.php (73)
+in /var/www/usingziicomp/index.php (13)
+2013/01/08 00:23:12 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`sakila`.`film`, CONSTRAINT `fk_film_language_original` FOREIGN KEY (`original_language_id`) REFERENCES `language` (`language_id`) ON UPDATE CASCADE). The SQL statement executed was: INSERT INTO `film` (`special_memo`, `rental_duration`, `rental_rate`, `replacement_cost`, `rating`, `title`, `type_of_film`, `introduction_context`, `description`, `release_year`, `language_id`, `original_language_id`, `length`, `special_features`, `last_update`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8, :yp9, :yp10, :yp11, :yp12, :yp13, :yp14)' in /var/www/yii/yii-1.1.12.b600af/framework/db/CDbCommand.php:354
+Stack trace:
+#0 /var/www/yii/yii-1.1.12.b600af/framework/db/ar/CActiveRecord.php(1017): CDbCommand->execute()
+#1 /var/www/yii/yii-1.1.12.b600af/framework/db/ar/CActiveRecord.php(796): CActiveRecord->insert(NULL)
+#2 /var/www/usingziicomp/protected/controllers/FilmController.php(73): CActiveRecord->save()
+#3 /var/www/yii/yii-1.1.12.b600af/framework/web/actions/CInlineAction.php(50): FilmController->actionCreate()
+#4 /var/www/yii/yii-1.1.12.b600af/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#5 /var/www/yii/yii-1.1.12.b600af/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#6 /var/www/yii/yii-1.1.12.b600af/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#7 /var/www/yii/yii-1.1.12.b600af/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#8 /var/www/yii/yii-1.1.12.b600af/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#9 /var/www/yii/yii-1.1.12.b600af/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#10 /var/www/yii/yii-1.1.12.b600af/framework/web/CController.php(292): CFilterChain->run()
+#11 /var/www/yii/yii-1.1.12.b600af/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /var/www/yii/yii-1.1.12.b600af/framework/web/CWebApplication.php(283): CController->run('create')
+#13 /var/www/yii/yii-1.1.12.b600af/framework/web/CWebApplication.php(142): CWebApplication->runController('film/create')
+#14 /var/www/yii/yii-1.1.12.b600af/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#15 /var/www/usingziicomp/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/usingziicomp/index.php?r=film/create
+HTTP_REFERER=http://localhost/usingziicomp/index.php?r=film/create
+---

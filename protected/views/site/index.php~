@@ -1,0 +1,32 @@
+<?php
+/* @var $this SiteController */
+
+$this->pageTitle=Yii::app()->name;
+?>
+
+<h1>Welcome to our application:</i></h1>
+<p>This is an application dedicated to use the components  of Yii . This components will be used to query the Sakila database in 
+different fashions.</p>
+
+
+<ul>
+	<li>There will be brief descriptions for the use of the features of the application:</li>
+	  <li>Most of the commands will be used by routing after the index.php of the site </li>
+	  <li>Following is a list of commands and what is achieved after executing the command</li>
+<li> http://localhost/application/index.php?r=film </li>	 
+<p> This will let us see the results for a Film Model - related to the film table - created with the CRUD utility of Yii. </p>
+<li> http://localhost/application/index.php?r=grid/aR </li>
+<p> This will let us see the results of Film Model according to the Active Record class of Yii. </p>
+<li> http://localhost/application/index.php?r=grid/array </li>
+<p> Corresponds to an array that has already been pre-configured in the application </p>
+<li> http://localhost/application/index.php?r=grid/sql </li>
+<p> Corresponds to a direct query in the database, in this case in the table film. </p>
+</ul>
+
+<?php
+
+?>
+<p>For more details on how to further develop this application, please read
+the <a href="http://www.yiiframework.com/doc/">documentation</a>.
+Feel free to ask in the <a href="http://www.yiiframework.com/forum/">forum</a>,
+should you have any questions.</p>
