@@ -6,7 +6,18 @@ $this->breadcrumbs=array(
 	'About',
 );
 ?>
-<h1>About</h1>
+<h1>About Professional Data Management </h1>
+ 
+<p>Yii is a powerful framework that is being constantly updated </p>
 
-<p>This is a "static" page. You may change the content of this page
-by updating the file <code><?php echo __FILE__; ?></code>.</p>
+<p> Databases used will be: </p>
+<p> MySQL and SQLite </p>
+<p> Other features include: </p>
+<p> JQuery, Javascript </p>
+	
+
+
+
+
+
+

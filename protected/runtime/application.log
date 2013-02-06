@@ -637,3 +637,173 @@ Stack trace:
 REQUEST_URI=/usingziicomp/index.php?r=film/create
 HTTP_REFERER=http://localhost/usingziicomp/index.php?r=film/create
 ---
+2013/02/04 00:39:01 [error] [exception.CException] exception 'CException' with message 'Alias "application.components.ArtMenu" is invalid. Make sure it points to an existing PHP file and the file is readable.' in /var/www/yii/yii-1.1.12.b600af/framework/YiiBase.php:318
+Stack trace:
+#0 /var/www/yii/yii-1.1.12.b600af/framework/web/CWidgetFactory.php(147): YiiBase::import('application.com...', true)
+#1 /var/www/yii/yii-1.1.12.b600af/framework/web/CBaseController.php(147): CWidgetFactory->createWidget(Object(SiteController), 'application.com...', Array)
+#2 /var/www/yii/yii-1.1.12.b600af/framework/web/CBaseController.php(173): CBaseController->createWidget('application.com...', Array)
+#3 /var/www/usingziicomp/themes/fistful/views/layouts/main.php(44): CBaseController->widget('application.com...', Array)
+#4 /var/www/yii/yii-1.1.12.b600af/framework/web/CBaseController.php(127): require('/var/www/usingz...')
+#5 /var/www/yii/yii-1.1.12.b600af/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/usingz...', Array, true)
+#6 /var/www/yii/yii-1.1.12.b600af/framework/web/widgets/CContentDecorator.php(77): CBaseController->renderFile('/var/www/usingz...', Array, true)
+#7 /var/www/yii/yii-1.1.12.b600af/framework/web/widgets/CContentDecorator.php(55): CContentDecorator->decorate('<div class="art...')
+#8 /var/www/yii/yii-1.1.12.b600af/framework/web/widgets/COutputProcessor.php(45): CContentDecorator->processOutput('<div class="art...')
+#9 /var/www/yii/yii-1.1.12.b600af/framework/web/CBaseController.php(207): COutputProcessor->run()
+#10 /var/www/yii/yii-1.1.12.b600af/framework/web/CBaseController.php(301): CBaseController->endWidget('CContentDecorat...')
+#11 /var/www/usingziicomp/themes/fistful/views/layouts/column1.php(9): CBaseController->endContent()
+#12 /var/www/yii/yii-1.1.12.b600af/framework/web/CBaseController.php(127): require('/var/www/usingz...')
+#13 /var/www/yii/yii-1.1.12.b600af/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/usingz...', Array, true)
+#14 /var/www/yii/yii-1.1.12.b600af/framework/web/CController.php(785): CBaseController->renderFile('/var/www/usingz...', Array, true)
+#15 /var/www/usingziicomp/protected/controllers/SiteController.php(98): CController->render('login', Array)
+#16 /var/www/yii/yii-1.1.12.b600af/framework/web/actions/CInlineAction.php(50): SiteController->actionLogin()
+#17 /var/www/yii/yii-1.1.12.b600af/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#18 /var/www/yii/yii-1.1.12.b600af/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#19 /var/www/yii/yii-1.1.12.b600af/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 /var/www/yii/yii-1.1.12.b600af/framework/web/CWebApplication.php(283): CController->run('login')
+#21 /var/www/yii/yii-1.1.12.b600af/framework/web/CWebApplication.php(142): CWebApplication->runController('site/login')
+#22 /var/www/yii/yii-1.1.12.b600af/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#23 /var/www/usingziicomp/index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/usingziicomp/index.php?r=site/login
+HTTP_REFERER=http://localhost/usingziicomp/index.php?r=site/contact
+---
+2013/02/04 00:39:24 [error] [exception.CException] exception 'CException' with message 'Alias "application.components.ArtMenu" is invalid. Make sure it points to an existing PHP file and the file is readable.' in /var/www/yii/yii-1.1.12.b600af/framework/YiiBase.php:318
+Stack trace:
+#0 /var/www/yii/yii-1.1.12.b600af/framework/web/CWidgetFactory.php(147): YiiBase::import('application.com...', true)
+#1 /var/www/yii/yii-1.1.12.b600af/framework/web/CBaseController.php(147): CWidgetFactory->createWidget(Object(SiteController), 'application.com...', Array)
+#2 /var/www/yii/yii-1.1.12.b600af/framework/web/CBaseController.php(173): CBaseController->createWidget('application.com...', Array)
+#3 /var/www/usingziicomp/themes/fistful/views/layouts/main.php(44): CBaseController->widget('application.com...', Array)
+#4 /var/www/yii/yii-1.1.12.b600af/framework/web/CBaseController.php(127): require('/var/www/usingz...')
+#5 /var/www/yii/yii-1.1.12.b600af/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/usingz...', Array, true)
+#6 /var/www/yii/yii-1.1.12.b600af/framework/web/widgets/CContentDecorator.php(77): CBaseController->renderFile('/var/www/usingz...', Array, true)
+#7 /var/www/yii/yii-1.1.12.b600af/framework/web/widgets/CContentDecorator.php(55): CContentDecorator->decorate('<div class="art...')
+#8 /var/www/yii/yii-1.1.12.b600af/framework/web/widgets/COutputProcessor.php(45): CContentDecorator->processOutput('<div class="art...')
+#9 /var/www/yii/yii-1.1.12.b600af/framework/web/CBaseController.php(207): COutputProcessor->run()
+#10 /var/www/yii/yii-1.1.12.b600af/framework/web/CBaseController.php(301): CBaseController->endWidget('CContentDecorat...')
+#11 /var/www/usingziicomp/themes/fistful/views/layouts/column1.php(9): CBaseController->endContent()
+#12 /var/www/yii/yii-1.1.12.b600af/framework/web/CBaseController.php(127): require('/var/www/usingz...')
+#13 /var/www/yii/yii-1.1.12.b600af/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/usingz...', Array, true)
+#14 /var/www/yii/yii-1.1.12.b600af/framework/web/CController.php(785): CBaseController->renderFile('/var/www/usingz...', Array, true)
+#15 /var/www/usingziicomp/protected/controllers/SiteController.php(98): CController->render('login', Array)
+#16 /var/www/yii/yii-1.1.12.b600af/framework/web/actions/CInlineAction.php(50): SiteController->actionLogin()
+#17 /var/www/yii/yii-1.1.12.b600af/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#18 /var/www/yii/yii-1.1.12.b600af/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#19 /var/www/yii/yii-1.1.12.b600af/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 /var/www/yii/yii-1.1.12.b600af/framework/web/CWebApplication.php(283): CController->run('login')
+#21 /var/www/yii/yii-1.1.12.b600af/framework/web/CWebApplication.php(142): CWebApplication->runController('site/login')
+#22 /var/www/yii/yii-1.1.12.b600af/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#23 /var/www/usingziicomp/index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/usingziicomp/index.php?r=site/login
+HTTP_REFERER=http://localhost/usingziicomp/index.php?r=site/contact
+---
+2013/02/04 00:39:26 [error] [exception.CException] exception 'CException' with message 'Alias "application.components.ArtMenu" is invalid. Make sure it points to an existing PHP file and the file is readable.' in /var/www/yii/yii-1.1.12.b600af/framework/YiiBase.php:318
+Stack trace:
+#0 /var/www/yii/yii-1.1.12.b600af/framework/web/CWidgetFactory.php(147): YiiBase::import('application.com...', true)
+#1 /var/www/yii/yii-1.1.12.b600af/framework/web/CBaseController.php(147): CWidgetFactory->createWidget(Object(SiteController), 'application.com...', Array)
+#2 /var/www/yii/yii-1.1.12.b600af/framework/web/CBaseController.php(173): CBaseController->createWidget('application.com...', Array)
+#3 /var/www/usingziicomp/themes/fistful/views/layouts/main.php(44): CBaseController->widget('application.com...', Array)
+#4 /var/www/yii/yii-1.1.12.b600af/framework/web/CBaseController.php(127): require('/var/www/usingz...')
+#5 /var/www/yii/yii-1.1.12.b600af/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/usingz...', Array, true)
+#6 /var/www/yii/yii-1.1.12.b600af/framework/web/widgets/CContentDecorator.php(77): CBaseController->renderFile('/var/www/usingz...', Array, true)
+#7 /var/www/yii/yii-1.1.12.b600af/framework/web/widgets/CContentDecorator.php(55): CContentDecorator->decorate('<div class="art...')
+#8 /var/www/yii/yii-1.1.12.b600af/framework/web/widgets/COutputProcessor.php(45): CContentDecorator->processOutput('<div class="art...')
+#9 /var/www/yii/yii-1.1.12.b600af/framework/web/CBaseController.php(207): COutputProcessor->run()
+#10 /var/www/yii/yii-1.1.12.b600af/framework/web/CBaseController.php(301): CBaseController->endWidget('CContentDecorat...')
+#11 /var/www/usingziicomp/themes/fistful/views/layouts/column1.php(9): CBaseController->endContent()
+#12 /var/www/yii/yii-1.1.12.b600af/framework/web/CBaseController.php(127): require('/var/www/usingz...')
+#13 /var/www/yii/yii-1.1.12.b600af/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/usingz...', Array, true)
+#14 /var/www/yii/yii-1.1.12.b600af/framework/web/CController.php(785): CBaseController->renderFile('/var/www/usingz...', Array, true)
+#15 /var/www/usingziicomp/protected/controllers/SiteController.php(98): CController->render('login', Array)
+#16 /var/www/yii/yii-1.1.12.b600af/framework/web/actions/CInlineAction.php(50): SiteController->actionLogin()
+#17 /var/www/yii/yii-1.1.12.b600af/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#18 /var/www/yii/yii-1.1.12.b600af/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#19 /var/www/yii/yii-1.1.12.b600af/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 /var/www/yii/yii-1.1.12.b600af/framework/web/CWebApplication.php(283): CController->run('login')
+#21 /var/www/yii/yii-1.1.12.b600af/framework/web/CWebApplication.php(142): CWebApplication->runController('site/login')
+#22 /var/www/yii/yii-1.1.12.b600af/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#23 /var/www/usingziicomp/index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/usingziicomp/index.php?r=site/login
+HTTP_REFERER=http://localhost/usingziicomp/index.php?r=site/contact
+---
+2013/02/04 00:39:57 [error] [exception.CException] exception 'CException' with message 'Alias "application.components.ArtMenu" is invalid. Make sure it points to an existing PHP file and the file is readable.' in /var/www/yii/yii-1.1.12.b600af/framework/YiiBase.php:318
+Stack trace:
+#0 /var/www/yii/yii-1.1.12.b600af/framework/web/CWidgetFactory.php(147): YiiBase::import('application.com...', true)
+#1 /var/www/yii/yii-1.1.12.b600af/framework/web/CBaseController.php(147): CWidgetFactory->createWidget(Object(SiteController), 'application.com...', Array)
+#2 /var/www/yii/yii-1.1.12.b600af/framework/web/CBaseController.php(173): CBaseController->createWidget('application.com...', Array)
+#3 /var/www/usingziicomp/themes/fistful/views/layouts/main.php(44): CBaseController->widget('application.com...', Array)
+#4 /var/www/yii/yii-1.1.12.b600af/framework/web/CBaseController.php(127): require('/var/www/usingz...')
+#5 /var/www/yii/yii-1.1.12.b600af/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/usingz...', Array, true)
+#6 /var/www/yii/yii-1.1.12.b600af/framework/web/widgets/CContentDecorator.php(77): CBaseController->renderFile('/var/www/usingz...', Array, true)
+#7 /var/www/yii/yii-1.1.12.b600af/framework/web/widgets/CContentDecorator.php(55): CContentDecorator->decorate('<div class="art...')
+#8 /var/www/yii/yii-1.1.12.b600af/framework/web/widgets/COutputProcessor.php(45): CContentDecorator->processOutput('<div class="art...')
+#9 /var/www/yii/yii-1.1.12.b600af/framework/web/CBaseController.php(207): COutputProcessor->run()
+#10 /var/www/yii/yii-1.1.12.b600af/framework/web/CBaseController.php(301): CBaseController->endWidget('CContentDecorat...')
+#11 /var/www/usingziicomp/themes/fistful/views/layouts/column1.php(9): CBaseController->endContent()
+#12 /var/www/yii/yii-1.1.12.b600af/framework/web/CBaseController.php(127): require('/var/www/usingz...')
+#13 /var/www/yii/yii-1.1.12.b600af/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/usingz...', Array, true)
+#14 /var/www/yii/yii-1.1.12.b600af/framework/web/CController.php(785): CBaseController->renderFile('/var/www/usingz...', Array, true)
+#15 /var/www/usingziicomp/protected/controllers/SiteController.php(98): CController->render('login', Array)
+#16 /var/www/yii/yii-1.1.12.b600af/framework/web/actions/CInlineAction.php(50): SiteController->actionLogin()
+#17 /var/www/yii/yii-1.1.12.b600af/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#18 /var/www/yii/yii-1.1.12.b600af/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#19 /var/www/yii/yii-1.1.12.b600af/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 /var/www/yii/yii-1.1.12.b600af/framework/web/CWebApplication.php(283): CController->run('login')
+#21 /var/www/yii/yii-1.1.12.b600af/framework/web/CWebApplication.php(142): CWebApplication->runController('site/login')
+#22 /var/www/yii/yii-1.1.12.b600af/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#23 /var/www/usingziicomp/index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/usingziicomp/index.php?r=site/login
+HTTP_REFERER=http://localhost/usingziicomp/index.php?r=site/contact
+---
+2013/02/04 00:50:42 [error] [exception.CException] exception 'CException' with message 'Alias "application.components.ArtMenu" is invalid. Make sure it points to an existing PHP file and the file is readable.' in /var/www/yii/yii-1.1.12.b600af/framework/YiiBase.php:318
+Stack trace:
+#0 /var/www/yii/yii-1.1.12.b600af/framework/web/CWidgetFactory.php(147): YiiBase::import('application.com...', true)
+#1 /var/www/yii/yii-1.1.12.b600af/framework/web/CBaseController.php(147): CWidgetFactory->createWidget(Object(SiteController), 'application.com...', Array)
+#2 /var/www/yii/yii-1.1.12.b600af/framework/web/CBaseController.php(173): CBaseController->createWidget('application.com...', Array)
+#3 /var/www/usingziicomp/themes/fistful/views/layouts/main.php(44): CBaseController->widget('application.com...', Array)
+#4 /var/www/yii/yii-1.1.12.b600af/framework/web/CBaseController.php(127): require('/var/www/usingz...')
+#5 /var/www/yii/yii-1.1.12.b600af/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/usingz...', Array, true)
+#6 /var/www/yii/yii-1.1.12.b600af/framework/web/widgets/CContentDecorator.php(77): CBaseController->renderFile('/var/www/usingz...', Array, true)
+#7 /var/www/yii/yii-1.1.12.b600af/framework/web/widgets/CContentDecorator.php(55): CContentDecorator->decorate('<div class="art...')
+#8 /var/www/yii/yii-1.1.12.b600af/framework/web/widgets/COutputProcessor.php(45): CContentDecorator->processOutput('<div class="art...')
+#9 /var/www/yii/yii-1.1.12.b600af/framework/web/CBaseController.php(207): COutputProcessor->run()
+#10 /var/www/yii/yii-1.1.12.b600af/framework/web/CBaseController.php(301): CBaseController->endWidget('CContentDecorat...')
+#11 /var/www/usingziicomp/themes/fistful/views/layouts/column1.php(9): CBaseController->endContent()
+#12 /var/www/yii/yii-1.1.12.b600af/framework/web/CBaseController.php(127): require('/var/www/usingz...')
+#13 /var/www/yii/yii-1.1.12.b600af/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/usingz...', Array, true)
+#14 /var/www/yii/yii-1.1.12.b600af/framework/web/CController.php(785): CBaseController->renderFile('/var/www/usingz...', Array, true)
+#15 /var/www/usingziicomp/protected/controllers/SiteController.php(98): CController->render('login', Array)
+#16 /var/www/yii/yii-1.1.12.b600af/framework/web/actions/CInlineAction.php(50): SiteController->actionLogin()
+#17 /var/www/yii/yii-1.1.12.b600af/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#18 /var/www/yii/yii-1.1.12.b600af/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#19 /var/www/yii/yii-1.1.12.b600af/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 /var/www/yii/yii-1.1.12.b600af/framework/web/CWebApplication.php(283): CController->run('login')
+#21 /var/www/yii/yii-1.1.12.b600af/framework/web/CWebApplication.php(142): CWebApplication->runController('site/login')
+#22 /var/www/yii/yii-1.1.12.b600af/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#23 /var/www/usingziicomp/index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/usingziicomp/index.php?r=site/login
+HTTP_REFERER=http://localhost/usingziicomp/index.php?r=site/contact
+---
+2013/02/05 21:44:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in /var/www/yii/yii-1.1.12.b600af/framework/web/CController.php:484
+Stack trace:
+#0 /var/www/yii/yii-1.1.12.b600af/framework/web/CController.php(271): CController->missingAction('')
+#1 /var/www/yii/yii-1.1.12.b600af/framework/web/CWebApplication.php(283): CController->run('')
+#2 /var/www/yii/yii-1.1.12.b600af/framework/web/CWebApplication.php(142): CWebApplication->runController('grid')
+#3 /var/www/yii/yii-1.1.12.b600af/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/usingziicomp/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/usingziicomp/index.php?r=grid
+---
+2013/02/05 21:45:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in /var/www/yii/yii-1.1.12.b600af/framework/web/CController.php:484
+Stack trace:
+#0 /var/www/yii/yii-1.1.12.b600af/framework/web/CController.php(271): CController->missingAction('')
+#1 /var/www/yii/yii-1.1.12.b600af/framework/web/CWebApplication.php(283): CController->run('')
+#2 /var/www/yii/yii-1.1.12.b600af/framework/web/CWebApplication.php(142): CWebApplication->runController('grid')
+#3 /var/www/yii/yii-1.1.12.b600af/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/usingziicomp/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/usingziicomp/index.php?r=grid
+---
