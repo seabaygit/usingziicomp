@@ -1,0 +1,208 @@
+/* Copyright (C) YOOtheme GmbH, http://www.gnu.org/licenses/gpl.html GNU/GPL */
+
+/*
+ * ThemeKat styles
+ */
+
+/*main sections-------------------------------------------------*/
+#page {background: #9be7a7;}
+
+#block-header, #block-footer {background:url(../images/pattern.jpg);}
+
+#block-top-a, #block-bottom {background: #3e9c2a;}
+
+#block-top-b {background: #50cf38;}
+
+#header, #footer {margin:0;}
+
+#logo p {margin: 0; padding: 0;}
+
+#footer {padding:5px; color: #3e9c2a;}
+
+#footer a {color: #50cf38;}
+
+#footer a:hover {color: #fff;}
+
+#toolbar, #headerbar {color: #fff;}
+
+#top-a, #top-b, #bottom-a, #bottom-b {color:#fff;}
+
+#top-a a, #top-b a, #bottom-a a, #bottom-b a {color:#50cf38;}
+
+
+/*main sections--------------------------------------------------*/
+
+
+
+/*base------------------------------------------------------------*/
+h1, h2, h3, h4, h5, h6 {color: #29681D;}
+
+body {color:#222222;}
+
+a {color:#29681D;}
+
+a:hover {color:#fff;}
+
+h4 {margin: 8px; font-size: 16px;}
+
+dl {padding-left: 10px;}
+
+dd {margin-left: 20px;}
+
+/*base-------------------------------------------------------------*/
+
+
+
+/*menus-----------------------------------------------------------*/
+#menubar {background: #50cf38; padding: 5px;}
+
+/* Level 1 */
+.menu-dropdown { margin-bottom: -10px; }
+
+.menu-dropdown li.level1 {
+	margin-right: 10px;
+	padding-bottom: 10px;
+}
+
+.menu-dropdown a.level1,
+.menu-dropdown span.level1 {
+	border: none;
+	color: #29681D;
+}
+
+/* Set Active */
+.menu-dropdown li.active .level1 { color: #fff; background: #29681D;}
+
+/* Set Hover */
+.menu-dropdown li.level1:hover .level1,
+.menu-dropdown li.remain .level1 { color: #fff; background: #3e9c2a;}
+
+/* Drop-Down */
+.menu-dropdown .dropdown {
+	top: 42px;
+	border-top: 1px solid #3e9c2a;
+}
+
+.menu-dropdown .dropdown-bg > div {
+	padding: 0 5px;
+	border: 1px solid transparent;
+	border-top: none;
+	background: #29681D;
+}
+
+/* Level 2 */
+.menu-dropdown li.level2 { 
+	margin: 0 5px;
+	border-top: 1px solid #3e9c2a;
+}
+.menu-dropdown li.level2:first-child { border: none; }
+
+.menu-dropdown a.level2,
+.menu-dropdown span.level2 , .menu-dropdown a.level3,
+.menu-dropdown span.level3 { color: #fff; }
+
+/* Set Hover */
+.menu-dropdown a.level2:hover { color: #50cf38; }
+
+/* Set Current */
+.menu-dropdown a.current.level2 { font-weight: bold; } 
+
+/* Set Hover */
+.menu-dropdown a.level3:hover { color: #50cf38; }
+
+/* Set Current */
+.menu-dropdown a.current.level3 { font-weight: bold; }
+
+/* Link */
+.menu-sidebar a,
+.menu-sidebar li > span { color: #29681D; }
+
+/* Hover */
+.menu-sidebar a:hover,
+.menu-sidebar li > span:hover { color: #fff; }
+
+/* Current */
+.menu-sidebar a.current { font-weight: bold; }
+
+/* Level 1 */
+.menu-sidebar li.level1 { border-top: none; }
+.menu-sidebar li.level1:first-child { border-top: none; } 
+
+/*menus*-------------------------------------------------------------/
+
+
+
+/*tools----------------------------------------------------------------*/
+form.box fieldset { border: 1px solid #3e9c2a; border-radius: 3px; }
+
+.button-default {
+	padding: 3px 10px;
+	border: none;
+}
+
+ul.zebra > li,
+table.zebra tbody td { border-bottom: 1px solid #3e9c2a; }
+ul.zebra > li:first-child,
+table.zebra tbody tr:first-child td { border-top: 1px solid #3e9c2a; }
+
+ul.zebra > li.odd,
+table.zebra tbody tr.odd { background: #73d382; }
+ul.zebra > li:nth-of-type(odd),
+table.zebra tbody tr:nth-of-type(odd) { background: #73d382; }
+
+table.zebra caption { color: #222222; }
+
+#system small { color: #222222; }
+/*tools----------------------------------------------------------------*/
+
+/*system------------------------------------------------------------------*/
+#system .title a { color: #29681D; }
+
+#system .item > header .meta { color: #3e9c2a; }
+
+#system .pagination a,
+#system .pagination strong { border: none; }
+
+ul.line > li { border-top: none; }
+
+#system .items .item {
+	margin-top: 12px;
+	padding-top: 18px;
+	border-top: 1px dashed #3e9c2a;
+}
+
+#system .items .leading .item {
+	padding-bottom: 12px;
+	margin-bottom: 18px;
+	border-bottom: 1px dashed #3e9c2a;
+}
+
+#system .item-list { border-top: 1px dashed #3e9c2a; }
+
+.searchbox {
+	width: 100px;
+	height: 30px;
+	padding: 0 25px;
+	border: 1px solid #ddd;
+	background:#fff url(../images/searchbox_magnifier.png) 0 50% no-repeat;
+}
+
+
+
+/*modules------------------------------------------------------------------*/
+.mod-box {
+	padding: 15px;
+	border: none;
+	background:url(../images/pattern.jpg);
+	border-radius: 3px;
+}
+
+#main .mod-box {
+	padding: 15px;
+	border: none;
+	background: #73d382;
+}
+
+#top-a .mod-box h3, #top-b .mod-box h3, #bottom-a .mod-box h3, #bottom-b .mod-box h3    {color:#50cf38;}
+
+/*modules------------------------------------------------------------------*/
