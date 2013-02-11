@@ -1,0 +1,13 @@
+<RCC>
+    <qresource prefix="/">
+        <file>images/star.png</file>
+        <file>images/san_mateo.png</file>
+        <file>images/south_san_francisco.png</file>
+        <file>images/miamibeach.png</file>
+        <file>images/fort_lauderdale_airport.png</file>
+        <file>images/canada.png</file>
+        <file>images/los_angeles.png</file>
+        <file>images/san_francisco.png</file>
+        <file>images/san_jose.png</file>
+    </qresource>
+</RCC>

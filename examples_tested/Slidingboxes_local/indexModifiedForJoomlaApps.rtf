@@ -1,0 +1,391 @@
+{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Calibri;}}
+{\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\sa200\sl276\slmult1\lang9\f0\fs22 <p>\par
+<title>Beautiful Photo Stack Gallery with jQuery and CSS3</title>\par
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><meta name="description" content="Beautiful Photo Stack Gallery with jQuery and CSS3" /><meta name="keywords" content="photo stack, gallery, jquery, css3, beautiful, overlay, sliding, album" /><link rel="stylesheet" href="images/PhotoStack_local/css/style.css" type="text/css" media="screen" />\par
+<style type="text/css" scoped="scoped"><!--\par
+span.reference\{\par
+            position:fixed;\par
+            top:10px;\par
+            right:10px;\par
+            font-size:9px;\par
+          \}\par
+          span.reference a\{\par
+            color:#aaa;\par
+            text-decoration:none;\par
+\tab\tab\tab text-transform:uppercase;\par
+\tab\tab\tab margin-left:10px;\par
+          \}\par
+          span.reference a:hover\{\par
+              color:#ddd;\par
+          \}\par
+\tab\tab   h1.title\{\par
+\tab\tab\tab text-indent:-9000px;\par
+\tab\tab\tab background:transparent url(title.png) no-repeat top left;\par
+\tab\tab\tab width:640px;\par
+\tab\tab\tab height:52px;\par
+\tab\tab\tab position:absolute;\par
+\tab\tab\tab top:15px;\par
+\tab\tab\tab left:15px;\par
+\tab\tab   \}\par
+--></style>\par
+</p>\par
+<div>\par
+<h1 class="title">Beautiful Photo Stack Gallery with jQuery and CSS3</h1>\par
+<span class="reference"> <a href="http://tympanus.net/codrops/2010/06/27/beautiful-photo-stack-gallery-with-jquery-and-css3/">\'c2\'a9 Codrops</a> <a href="http://www.flickr.com/photos/geishaboy500/">Photos by geishaboy500</a> </span></div>\par
+<div id="ps_slider" class="ps_slider"><a class="prev disabled"></a> <a class="next disabled"></a>\par
+<div id="ps_albums">\par
+<div class="ps_album" style="opacity: 0;"><img src="images/PhotoStack_local/albums/album1/thumb/thumb.jpg" alt="" />\par
+<div class="ps_desc">\par
+<h2>The Night</h2>\par
+<span>Top Cat! The most effectual Top Cat! Who's intellectual close friends get to call him T.C., providing it's with dignity.Top Cat! The indisputable leader!</span></div>\par
+</div>\par
+<div class="ps_album" style="opacity: 0;"><img src="images/PhotoStack_local/albums/album2/thumb/thumb.jpg" alt="" />\par
+<div class="ps_desc">\par
+<h2>Lovely Dreams</h2>\par
+<span>Abundantly fowl of you'll fly moved i evening there whales creeping very kind green. Of have after lights saying.</span></div>\par
+</div>\par
+<div class="ps_album" style="opacity: 0;"><img src="images/PhotoStack_local/albums/album3/thumb/thumb.jpg" alt="" />\par
+<div class="ps_desc">\par
+<h2>Insane Art</h2>\par
+<span>Also female divide fruitful wherein upon, fruitful great fourth likeness given subdue cattle deep abundantly set place night stars fill.</span></div>\par
+</div>\par
+<div class="ps_album" style="opacity: 0;"><img src="images/PhotoStack_local/albums/album4/thumb/thumb.jpg" alt="" />\par
+<div class="ps_desc">\par
+<h2>Prime Time</h2>\par
+<span>And did the Countenance DivineShine forth upon our clouded hills? And was Jerusalem builded here among these dark Satanic Mills?</span></div>\par
+</div>\par
+<div class="ps_album" style="opacity: 0;"><img src="images/PhotoStack_local/albums/album5/thumb/thumb.jpg" alt="" />\par
+<div class="ps_desc">\par
+<h2>House, Baby!</h2>\par
+<span>You can have all the faith you want in spirits, and the afterlife, and heaven and hell, but when it comes to this world, don't be an idiot.</span></div>\par
+</div>\par
+<div class="ps_album" style="opacity: 0;"><img src="images/PhotoStack_local/albums/album6/thumb/thumb.jpg" alt="" />\par
+<div class="ps_desc">\par
+<h2>Run away</h2>\par
+<span>Without contraries is no progression. Attraction and repulsion, reason and energy, love and hate, are necessary to human existence.</span></div>\par
+</div>\par
+<div class="ps_album" style="opacity: 0;"><img src="images/PhotoStack_local/albums/album7/thumb/thumb.jpg" alt="" />\par
+<div class="ps_desc">\par
+<h2>Longing</h2>\par
+<span>So hath under years itself seasons life divided signs light were god fruitful evening a. Fruitful.</span></div>\par
+</div>\par
+<div class="ps_album" style="opacity: 0;"><img src="images/PhotoStack_local/albums/album8/thumb/thumb.jpg" alt="" />\par
+<div class="ps_desc">\par
+<h2>Heartbreaks</h2>\par
+<span>A light moving. Moved was abundantly created, over sixth above grass after grass.</span></div>\par
+</div>\par
+<div class="ps_album" style="opacity: 0;"><img src="images/PhotoStack_local/albums/album9/thumb/thumb.jpg" alt="" />\par
+<div class="ps_desc">\par
+<h2>Fearful Water</h2>\par
+<span>If the doors of perception were cleansed everything would appear to man as it is, infinite.</span></div>\par
+</div>\par
+</div>\par
+</div>\par
+<div id="ps_overlay" class="ps_overlay" style="display: none;">&nbsp;</div>\par
+<p><a id="ps_close"></a></p>\par
+<div id="ps_container" class="ps_container" style="display: none;">&nbsp;</div>\par
+<!-- The JavaScript -->\par
+<p>\par
+<script src="images/PhotoStack_local/js/jquery.js" type="text/javascript"></script>\par
+<script type="text/javascript">// <![CDATA[\par
+$(function() \{\par
+\tab\tab\tab\tab /**\par
+\tab\tab\tab\tab * navR,navL are flags for controlling the albums navigation\par
+\tab\tab\tab\tab * first gives us the position of the album on the left\par
+\tab\tab\tab\tab * positions are the left positions for each of the 5 albums displayed at a time\par
+\tab\tab\tab\tab */\par
+                var navR,navL\tab = false;\par
+\tab\tab\tab\tab var first\tab\tab = 1;\par
+\tab\tab\tab\tab var positions \tab = \{\par
+\tab\tab\tab\tab\tab '0'\tab\tab : 0,\par
+\tab\tab\tab\tab\tab '1' \tab : 170,\par
+\tab\tab\tab\tab\tab '2' \tab : 340,\par
+\tab\tab\tab\tab\tab '3' \tab : 510,\par
+\tab\tab\tab\tab\tab '4' \tab : 680\par
+\tab\tab\tab\tab\}\par
+\tab\tab\tab\tab var $ps_albums \tab\tab = $('#ps_albums');\par
+\tab\tab\tab\tab /**\par
+\tab\tab\tab\tab * number of albums available\par
+\tab\tab\tab\tab */\par
+\tab\tab\tab\tab var elems\tab\tab\tab = $ps_albums.children().length;\par
+\tab\tab\tab\tab var $ps_slider\tab\tab = $('#ps_slider');\par
+\tab\tab\tab\tab\par
+\tab\tab\tab\tab /**\par
+\tab\tab\tab\tab * let's position all the albums on the right side of the window\par
+\tab\tab\tab\tab */\par
+\tab\tab\tab\tab var hiddenRight \tab = $(window).width() - $ps_albums.offset().left;\par
+\tab\tab\tab\tab $ps_albums.children('div').css('left',hiddenRight + 'px');\par
+\tab\tab\tab\tab\par
+\tab\tab\tab\tab /**\par
+\tab\tab\tab\tab * move the first 5 albums to the viewport\par
+\tab\tab\tab\tab */\par
+\tab\tab\tab\tab $ps_albums.children('div:lt(5)').each(\par
+\tab\tab\tab\tab\tab function(i)\{\par
+\tab\tab\tab\tab\tab\tab var $elem = $(this);\par
+\tab\tab\tab\tab\tab\tab $elem.animate(\{'left': positions[i] + 'px','opacity':1\},800,function()\{\par
+\tab\tab\tab\tab\tab\tab\tab if(elems > 5)\par
+\tab\tab\tab\tab\tab\tab\tab\tab enableNavRight();\par
+\tab\tab\tab\tab\tab\tab\});\par
+\tab\tab\tab\tab\tab\}\par
+\tab\tab\tab\tab );\par
+\tab\tab\tab\tab\par
+\tab\tab\tab\tab /**\par
+\tab\tab\tab\tab * next album\par
+\tab\tab\tab\tab */\par
+\tab\tab\tab\tab $ps_slider.find('.next').bind('click',function()\{\par
+\tab\tab\tab\tab\tab if(!$ps_albums.children('div:nth-child('+parseInt(first+5)+')').length || !navR) return;\par
+\tab\tab\tab\tab\tab disableNavRight();\par
+\tab\tab\tab\tab\tab disableNavLeft();\par
+\tab\tab\tab\tab\tab moveRight();\par
+\tab\tab\tab\tab\});\par
+\tab\tab\tab\tab\par
+\tab\tab\tab\tab /**\par
+\tab\tab\tab\tab * we move the first album (the one on the left) to the left side of the window\par
+\tab\tab\tab\tab * the next 4 albums slide one position, and finally the next one in the list\par
+\tab\tab\tab\tab * slides in, to fill the space of the first one\par
+\tab\tab\tab\tab */\par
+\tab\tab\tab\tab function moveRight () \{\par
+\tab\tab\tab\tab\tab var hiddenLeft \tab = $ps_albums.offset().left + 163;\par
+\tab\tab\tab\tab\tab\par
+\tab\tab\tab\tab\tab var cnt = 0;\par
+\tab\tab\tab\tab\tab $ps_albums.children('div:nth-child('+first+')').animate(\{'left': - hiddenLeft + 'px','opacity':0\},500,function()\{\par
+\tab\tab\tab\tab\tab\tab\tab var $this = $(this);\par
+\tab\tab\tab\tab\tab\tab\tab $ps_albums.children('div').slice(first,parseInt(first+4)).each(\par
+\tab\tab\tab\tab\tab\tab\tab\tab function(i)\{\par
+\tab\tab\tab\tab\tab\tab\tab\tab\tab var $elem = $(this);\par
+\tab\tab\tab\tab\tab\tab\tab\tab\tab $elem.animate(\{'left': positions[i] + 'px'\},800,function()\{\par
+\tab\tab\tab\tab\tab\tab\tab\tab\tab\tab ++cnt;\par
+\tab\tab\tab\tab\tab\tab\tab\tab\tab\tab if(cnt == 4)\{\par
+\tab\tab\tab\tab\tab\tab\tab\tab\tab\tab\tab $ps_albums.children('div:nth-child('+parseInt(first+5)+')').animate(\{'left': positions[cnt] + 'px','opacity':1\},500,function()\{\par
+\tab\tab\tab\tab\tab\tab\tab\tab\tab\tab\tab\tab //$this.hide();\par
+\tab\tab\tab\tab\tab\tab\tab\tab\tab\tab\tab\tab ++first;\par
+\tab\tab\tab\tab\tab\tab\tab\tab\tab\tab\tab\tab if(parseInt(first + 4) < elems)\par
+\tab\tab\tab\tab\tab\tab\tab\tab\tab\tab\tab\tab\tab enableNavRight();\par
+\tab\tab\tab\tab\tab\tab\tab\tab\tab\tab\tab\tab enableNavLeft();\par
+\tab\tab\tab\tab\tab\tab\tab\tab\tab\tab\tab\});\par
+\tab\tab\tab\tab\tab\tab\tab\tab\tab\tab\}\tab\tab\par
+\tab\tab\tab\tab\tab\tab\tab\tab\tab\});\par
+\tab\tab\tab\tab\tab\tab\tab\tab\}\par
+\tab\tab\tab\tab\tab\tab\tab );\tab\tab\par
+\tab\tab\tab\tab\tab\});\par
+\tab\tab\tab\tab\}\par
+\tab\tab\tab\tab\par
+\tab\tab\tab\tab /**\par
+\tab\tab\tab\tab * previous album\par
+\tab\tab\tab\tab */\par
+\tab\tab\tab\tab $ps_slider.find('.prev').bind('click',function()\{\par
+\tab\tab\tab\tab\tab if(first==1  || !navL) return;\par
+\tab\tab\tab\tab\tab disableNavRight();\par
+\tab\tab\tab\tab\tab disableNavLeft();\par
+\tab\tab\tab\tab\tab moveLeft();\par
+\tab\tab\tab\tab\});\par
+\tab\tab\tab\tab\par
+\tab\tab\tab\tab /**\par
+\tab\tab\tab\tab * we move the last album (the one on the right) to the right side of the window\par
+\tab\tab\tab\tab * the previous 4 albums slide one position, and finally the previous one in the list\par
+\tab\tab\tab\tab * slides in, to fill the space of the last one\par
+\tab\tab\tab\tab */\par
+\tab\tab\tab\tab function moveLeft () \{\par
+\tab\tab\tab\tab\tab var hiddenRight \tab = $(window).width() - $ps_albums.offset().left;\par
+\tab\tab\tab\tab\par
+\tab\tab\tab\tab\tab var cnt = 0;\par
+\tab\tab\tab\tab\tab var last= first+4;\par
+\tab\tab\tab\tab\tab $ps_albums.children('div:nth-child('+last+')').animate(\{'left': hiddenRight + 'px','opacity':0\},500,function()\{\par
+\tab\tab\tab\tab\tab\tab\tab var $this = $(this);\par
+\tab\tab\tab\tab\tab\tab\tab $ps_albums.children('div').slice(parseInt(last-5),parseInt(last-1)).each(\par
+\tab\tab\tab\tab\tab\tab\tab\tab function(i)\{\par
+\tab\tab\tab\tab\tab\tab\tab\tab\tab var $elem = $(this);\par
+\tab\tab\tab\tab\tab\tab\tab\tab\tab $elem.animate(\{'left': positions[i+1] + 'px'\},800,function()\{\par
+\tab\tab\tab\tab\tab\tab\tab\tab\tab\tab ++cnt;\par
+\tab\tab\tab\tab\tab\tab\tab\tab\tab\tab if(cnt == 4)\{\par
+\tab\tab\tab\tab\tab\tab\tab\tab\tab\tab\tab $ps_albums.children('div:nth-child('+parseInt(last-5)+')').animate(\{'left': positions[0] + 'px','opacity':1\},500,function()\{\par
+\tab\tab\tab\tab\tab\tab\tab\tab\tab\tab\tab\tab //$this.hide();\par
+\tab\tab\tab\tab\tab\tab\tab\tab\tab\tab\tab\tab --first;\par
+\tab\tab\tab\tab\tab\tab\tab\tab\tab\tab\tab\tab enableNavRight();\par
+\tab\tab\tab\tab\tab\tab\tab\tab\tab\tab\tab\tab if(first > 1)\par
+\tab\tab\tab\tab\tab\tab\tab\tab\tab\tab\tab\tab\tab enableNavLeft();\par
+\tab\tab\tab\tab\tab\tab\tab\tab\tab\tab\tab\});\par
+\tab\tab\tab\tab\tab\tab\tab\tab\tab\tab\}\tab\tab\tab\tab\tab\tab\tab\tab\tab\tab\par
+\tab\tab\tab\tab\tab\tab\tab\tab\tab\});\par
+\tab\tab\tab\tab\tab\tab\tab\tab\}\par
+\tab\tab\tab\tab\tab\tab\tab );\par
+\tab\tab\tab\tab\tab\});\par
+\tab\tab\tab\tab\}\par
+\tab\tab\tab\tab\par
+\tab\tab\tab\tab /**\par
+\tab\tab\tab\tab * disable or enable albums navigation\par
+\tab\tab\tab\tab */\par
+\tab\tab\tab\tab function disableNavRight () \{\par
+\tab\tab\tab\tab\tab navR = false;\par
+\tab\tab\tab\tab\tab $ps_slider.find('.next').addClass('disabled');\par
+\tab\tab\tab\tab\}\par
+\tab\tab\tab\tab function disableNavLeft () \{\par
+\tab\tab\tab\tab\tab navL = false;\par
+\tab\tab\tab\tab\tab $ps_slider.find('.prev').addClass('disabled');\par
+\tab\tab\tab\tab\}\par
+\tab\tab\tab\tab function enableNavRight () \{\par
+\tab\tab\tab\tab\tab navR = true;\par
+\tab\tab\tab\tab\tab $ps_slider.find('.next').removeClass('disabled');\par
+\tab\tab\tab\tab\}\par
+\tab\tab\tab\tab function enableNavLeft () \{\par
+\tab\tab\tab\tab\tab navL = true;\par
+\tab\tab\tab\tab\tab $ps_slider.find('.prev').removeClass('disabled');\par
+\tab\tab\tab\tab\}\tab\tab\par
+\tab\tab\tab\tab\par
+\tab\tab\tab\tab var $ps_container \tab = $('#ps_container');\par
+\tab\tab\tab\tab var $ps_overlay \tab = $('#ps_overlay');\par
+\tab\tab\tab\tab var $ps_close\tab\tab = $('#ps_close');\par
+\tab\tab\tab\tab /**\par
+\tab\tab\tab\tab * when we click on an album,\par
+\tab\tab\tab\tab * we load with AJAX the list of pictures for that album.\par
+\tab\tab\tab\tab * we randomly rotate them except the last one, which is\par
+\tab\tab\tab\tab * the one the User sees first. We also resize and center each image.\par
+\tab\tab\tab\tab */\par
+\tab\tab\tab\tab $ps_albums.children('div').bind('click',function()\{\par
+\tab\tab\tab\tab\tab var $elem = $(this);\par
+\tab\tab\tab\tab\tab var album_name \tab = 'album' + parseInt($elem.index() + 1);\par
+\tab\tab\tab\tab\tab var $loading \tab = $('<div />',\{className:'loading'\});\par
+\tab\tab\tab\tab\tab $elem.append($loading);\par
+\tab\tab\tab\tab\tab $ps_container.find('img').remove();\par
+\tab\tab\tab\tab\tab $.get('photostack.php', \{album_name:album_name\} , function(data) \{\par
+\tab\tab\tab\tab\tab\tab var items_count\tab = data.length;\par
+\tab\tab\tab\tab\tab\tab for(var i = 0; i < items_count; ++i)\{\par
+\tab\tab\tab\tab\tab\tab\tab var item_source = data[i];\par
+\tab\tab\tab\tab\tab\tab\tab var cnt \tab\tab = 0;\par
+\tab\tab\tab\tab\tab\tab\tab $('<img />').load(function()\{\par
+\tab\tab\tab\tab\tab\tab\tab\tab var $image = $(this);\par
+\tab\tab\tab\tab\tab\tab\tab\tab ++cnt;\par
+\tab\tab\tab\tab\tab\tab\tab\tab resizeCenterImage($image);\par
+\tab\tab\tab\tab\tab\tab\tab\tab $ps_container.append($image);\par
+\tab\tab\tab\tab\tab\tab\tab\tab var r\tab\tab = Math.floor(Math.random()*41)-20;\par
+\tab\tab\tab\tab\tab\tab\tab\tab if(cnt < items_count)\{\par
+\tab\tab\tab\tab\tab\tab\tab\tab\tab $image.css(\{\par
+\tab\tab\tab\tab\tab\tab\tab\tab\tab\tab '-moz-transform'\tab :'rotate('+r+'deg)',\par
+\tab\tab\tab\tab\tab\tab\tab\tab\tab\tab '-webkit-transform'\tab :'rotate('+r+'deg)',\par
+\tab\tab\tab\tab\tab\tab\tab\tab\tab\tab 'transform'\tab\tab\tab :'rotate('+r+'deg)'\par
+\tab\tab\tab\tab\tab\tab\tab\tab\tab\});\par
+\tab\tab\tab\tab\tab\tab\tab\tab\}\par
+\tab\tab\tab\tab\tab\tab\tab\tab if(cnt == items_count)\{\par
+\tab\tab\tab\tab\tab\tab\tab\tab\tab $loading.remove();\par
+\tab\tab\tab\tab\tab\tab\tab\tab\tab $ps_container.show();\par
+\tab\tab\tab\tab\tab\tab\tab\tab\tab $ps_close.show();\par
+\tab\tab\tab\tab\tab\tab\tab\tab\tab $ps_overlay.show();\par
+\tab\tab\tab\tab\tab\tab\tab\tab\}\par
+\tab\tab\tab\tab\tab\tab\tab\}).attr('src',item_source);\par
+\tab\tab\tab\tab\tab\tab\}\par
+\tab\tab\tab\tab\tab\},'json');\par
+\tab\tab\tab\tab\});\par
+\tab\tab\tab\tab\par
+\tab\tab\tab\tab /**\par
+\tab\tab\tab\tab * when hovering each one of the images, \par
+\tab\tab\tab\tab * we show the button to navigate through them\par
+\tab\tab\tab\tab */\par
+\tab\tab\tab\tab $ps_container.live('mouseenter',function()\{\par
+\tab\tab\tab\tab\tab $('#ps_next_photo').show();\par
+\tab\tab\tab\tab\}).live('mouseleave',function()\{\par
+\tab\tab\tab\tab\tab $('#ps_next_photo').hide();\par
+\tab\tab\tab\tab\});\par
+\tab\tab\tab\tab\par
+\tab\tab\tab\tab /**\par
+\tab\tab\tab\tab * navigate through the images: \par
+\tab\tab\tab\tab * the last one (the visible one) becomes the first one.\par
+\tab\tab\tab\tab * we also rotate 0 degrees the new visible picture \par
+\tab\tab\tab\tab */\par
+\tab\tab\tab\tab $('#ps_next_photo').bind('click',function()\{\par
+\tab\tab\tab\tab\tab var $current \tab = $ps_container.find('img:last');\par
+\tab\tab\tab\tab\tab var r\tab\tab\tab = Math.floor(Math.random()*41)-20;\par
+\tab\tab\tab\tab\tab\par
+\tab\tab\tab\tab\tab var currentPositions = \{\par
+\tab\tab\tab\tab\tab\tab marginLeft\tab : $current.css('margin-left'),\par
+\tab\tab\tab\tab\tab\tab marginTop\tab : $current.css('margin-top')\par
+\tab\tab\tab\tab\tab\}\par
+\tab\tab\tab\tab\tab var $new_current = $current.prev();\par
+\tab\tab\tab\tab\tab\par
+\tab\tab\tab\tab\tab $current.animate(\{\par
+\tab\tab\tab\tab\tab\tab 'marginLeft':'250px',\par
+\tab\tab\tab\tab\tab\tab 'marginTop':'-385px'\par
+\tab\tab\tab\tab\tab\},250,function()\{\par
+\tab\tab\tab\tab\tab\tab $(this).insertBefore($ps_container.find('img:first'))\par
+\tab\tab\tab\tab\tab\tab\tab    .css(\{\par
+\tab\tab\tab\tab\tab\tab\tab\tab\tab '-moz-transform'\tab :'rotate('+r+'deg)',\par
+\tab\tab\tab\tab\tab\tab\tab\tab\tab '-webkit-transform'\tab :'rotate('+r+'deg)',\par
+\tab\tab\tab\tab\tab\tab\tab\tab\tab 'transform'\tab\tab\tab :'rotate('+r+'deg)'\par
+\tab\tab\tab\tab\tab\tab\tab\tab\})\par
+\tab\tab\tab\tab\tab\tab\tab    .animate(\{\par
+\tab\tab\tab\tab\tab\tab\tab\tab\tab 'marginLeft':currentPositions.marginLeft,\par
+\tab\tab\tab\tab\tab\tab\tab\tab\tab 'marginTop'\tab :currentPositions.marginTop\par
+\tab\tab\tab\tab\tab\tab\tab\tab\tab\},250,function()\{\par
+\tab\tab\tab\tab\tab\tab\tab\tab\tab\tab $new_current.css(\{\par
+\tab\tab\tab\tab\tab\tab\tab\tab\tab\tab\tab '-moz-transform'\tab :'rotate(0deg)',\par
+\tab\tab\tab\tab\tab\tab\tab\tab\tab\tab\tab '-webkit-transform'\tab :'rotate(0deg)',\par
+\tab\tab\tab\tab\tab\tab\tab\tab\tab\tab\tab 'transform'\tab\tab\tab :'rotate(0deg)'\par
+\tab\tab\tab\tab\tab\tab\tab\tab\tab\tab\});\par
+\tab\tab\tab\tab\tab\tab\tab    \});\par
+\tab\tab\tab\tab\tab\});\par
+\tab\tab\tab\tab\});\par
+\tab\tab\tab\tab\par
+\tab\tab\tab\tab /**\par
+\tab\tab\tab\tab * close the images view, and go back to albums\par
+\tab\tab\tab\tab */\par
+\tab\tab\tab\tab $('#ps_close').bind('click',function()\{\par
+\tab\tab\tab\tab\tab $ps_container.hide();\par
+\tab\tab\tab\tab\tab $ps_close.hide();\par
+\tab\tab\tab\tab\tab $ps_overlay.fadeOut(400);\par
+\tab\tab\tab\tab\});\par
+\tab\tab\tab\tab\par
+\tab\tab\tab\tab /**\par
+\tab\tab\tab\tab * resize and center the images\par
+\tab\tab\tab\tab */\par
+\tab\tab\tab\tab function resizeCenterImage($image)\{\par
+\tab\tab\tab\tab\tab var theImage \tab = new Image();\par
+\tab\tab\tab\tab\tab theImage.src \tab = $image.attr("src");\par
+\tab\tab\tab\tab\tab var imgwidth \tab = theImage.width;\par
+\tab\tab\tab\tab\tab var imgheight \tab = theImage.height;\par
+\tab\tab\tab\tab\tab\par
+\tab\tab\tab\tab\tab var containerwidth  = 460;\par
+\tab\tab\tab\tab\tab var containerheight = 330;\par
+\tab\tab\tab\tab\tab\par
+\tab\tab\tab\tab\tab if(imgwidth\tab > containerwidth)\{\par
+\tab\tab\tab\tab\tab\tab var newwidth = containerwidth;\par
+\tab\tab\tab\tab\tab\tab var ratio = imgwidth / containerwidth;\par
+\tab\tab\tab\tab\tab\tab var newheight = imgheight / ratio;\par
+\tab\tab\tab\tab\tab\tab if(newheight > containerheight)\{\par
+\tab\tab\tab\tab\tab\tab\tab var newnewheight = containerheight;\par
+\tab\tab\tab\tab\tab\tab\tab var newratio = newheight/containerheight;\par
+\tab\tab\tab\tab\tab\tab\tab var newnewwidth =newwidth/newratio;\par
+\tab\tab\tab\tab\tab\tab\tab theImage.width = newnewwidth;\par
+\tab\tab\tab\tab\tab\tab\tab theImage.height= newnewheight;\par
+\tab\tab\tab\tab\tab\tab\}\par
+\tab\tab\tab\tab\tab\tab else\{\par
+\tab\tab\tab\tab\tab\tab\tab theImage.width = newwidth;\par
+\tab\tab\tab\tab\tab\tab\tab theImage.height= newheight;\par
+\tab\tab\tab\tab\tab\tab\}\par
+\tab\tab\tab\tab\tab\}\par
+\tab\tab\tab\tab\tab else if(imgheight > containerheight)\{\par
+\tab\tab\tab\tab\tab\tab var newheight = containerheight;\par
+\tab\tab\tab\tab\tab\tab var ratio = imgheight / containerheight;\par
+\tab\tab\tab\tab\tab\tab var newwidth = imgwidth / ratio;\par
+\tab\tab\tab\tab\tab\tab if(newwidth > containerwidth)\{\par
+\tab\tab\tab\tab\tab\tab\tab var newnewwidth = containerwidth;\par
+\tab\tab\tab\tab\tab\tab\tab var newratio = newwidth/containerwidth;\par
+\tab\tab\tab\tab\tab\tab\tab var newnewheight =newheight/newratio;\par
+\tab\tab\tab\tab\tab\tab\tab theImage.height = newnewheight;\par
+\tab\tab\tab\tab\tab\tab\tab theImage.width= newnewwidth;\par
+\tab\tab\tab\tab\tab\tab\}\par
+\tab\tab\tab\tab\tab\tab else\{\par
+\tab\tab\tab\tab\tab\tab\tab theImage.width = newwidth;\par
+\tab\tab\tab\tab\tab\tab\tab theImage.height= newheight;\par
+\tab\tab\tab\tab\tab\tab\}\par
+\tab\tab\tab\tab\tab\}\par
+\tab\tab\tab\tab\tab $image.css(\{\par
+\tab\tab\tab\tab\tab\tab 'width'\tab\tab\tab :theImage.width,\par
+\tab\tab\tab\tab\tab\tab 'height'\tab\tab :theImage.height,\par
+\tab\tab\tab\tab\tab\tab 'margin-top'\tab :-(theImage.height/2)-10+'px',\par
+\tab\tab\tab\tab\tab\tab 'margin-left'\tab :-(theImage.width/2)-10+'px'\tab\par
+\tab\tab\tab\tab\tab\});\par
+\tab\tab\tab\tab\}\par
+            \});\par
+// ]]></script>\par
+</p>\par
+}
+ 
