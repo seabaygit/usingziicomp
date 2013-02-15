@@ -53,10 +53,10 @@ return array(
 		// uncomment the following to use a MySQL database
 		
 		'db'=>array(
-			'connectionString' => 'mysql:host=localhost;dbname=sakila',
+			'connectionString' => 'mysql:host=instance36993.db.xeround.com:5239;dbname=sakila',
 			'emulatePrepare' => true,
-			'username' => 'root',
-			'password' => '',
+			'username' => 'rootbay',
+			'password' => 'admit2020',
 			'charset' => 'utf8',
 		),
 	
