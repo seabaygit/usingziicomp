@@ -834,3 +834,141 @@ Stack trace:
 #22 {main}
 REQUEST_URI=/usingziicomp/index.php?r=film
 ---
+2013/03/03 11:23:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "db/Ar".' in /var/www/yii/yii-1.1.12.b600af/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /var/www/yii/yii-1.1.12.b600af/framework/web/CWebApplication.php(142): CWebApplication->runController('db/Ar')
+#1 /var/www/yii/yii-1.1.12.b600af/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/usingziicomp/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/usingziicomp/index.php?r=db/Ar
+---
+2013/03/03 11:23:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "ar".' in /var/www/yii/yii-1.1.12.b600af/framework/web/CController.php:484
+Stack trace:
+#0 /var/www/yii/yii-1.1.12.b600af/framework/web/CController.php(271): CController->missingAction('ar')
+#1 /var/www/yii/yii-1.1.12.b600af/framework/web/CWebApplication.php(283): CController->run('ar')
+#2 /var/www/yii/yii-1.1.12.b600af/framework/web/CWebApplication.php(142): CWebApplication->runController('film/ar')
+#3 /var/www/yii/yii-1.1.12.b600af/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/usingziicomp/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/usingziicomp/index.php?r=film/ar
+---
+2013/03/03 11:30:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "sq".' in /var/www/yii/yii-1.1.12.b600af/framework/web/CController.php:484
+Stack trace:
+#0 /var/www/yii/yii-1.1.12.b600af/framework/web/CController.php(271): CController->missingAction('sq')
+#1 /var/www/yii/yii-1.1.12.b600af/framework/web/CWebApplication.php(283): CController->run('sq')
+#2 /var/www/yii/yii-1.1.12.b600af/framework/web/CWebApplication.php(142): CWebApplication->runController('grid/sq')
+#3 /var/www/yii/yii-1.1.12.b600af/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/usingziicomp/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/usingziicomp/index.php?r=grid/sq
+---
+2013/03/18 22:32:23 [warning] [application] Failed to set unsafe attribute "store" of "Customer".
+in /var/www/usingziicomp/protected/controllers/CustomerController.php (139)
+in /var/www/usingziicomp/index.php (13)
+2013/03/31 14:30:49 [error] [php] htmlspecialchars(): Invalid multibyte sequence in argument (/var/www/yii/yii-1.1.12.b600af/framework/web/helpers/CHtml.php:85)
+Stack trace:
+#0 /var/www/yii/yii-1.1.12.b600af/framework/web/widgets/CActiveForm.php(703): activeTextArea()
+#1 /var/www/usingziicomp/protected/views/film/_form.php(38): CActiveForm->textArea()
+#2 /var/www/yii/yii-1.1.12.b600af/framework/web/CBaseController.php(127): require()
+#3 /var/www/yii/yii-1.1.12.b600af/framework/web/CBaseController.php(96): FilmController->renderInternal()
+#4 /var/www/yii/yii-1.1.12.b600af/framework/web/CController.php(870): FilmController->renderFile()
+#5 /var/www/usingziicomp/protected/views/film/create.php(18): FilmController->renderPartial()
+#6 /var/www/yii/yii-1.1.12.b600af/framework/web/CBaseController.php(127): require()
+#7 /var/www/yii/yii-1.1.12.b600af/framework/web/CBaseController.php(96): FilmController->renderInternal()
+#8 /var/www/yii/yii-1.1.12.b600af/framework/web/CController.php(870): FilmController->renderFile()
+#9 /var/www/yii/yii-1.1.12.b600af/framework/web/CController.php(783): FilmController->renderPartial()
+#10 /var/www/usingziicomp/protected/controllers/FilmController.php(79): FilmController->render()
+#11 /var/www/yii/yii-1.1.12.b600af/framework/web/actions/CInlineAction.php(50): FilmController->actionCreate()
+#12 /var/www/yii/yii-1.1.12.b600af/framework/web/CController.php(309): CInlineAction->runWithParams()
+#13 /var/www/yii/yii-1.1.12.b600af/framework/web/filters/CFilterChain.php(134): FilmController->runAction()
+#14 /var/www/yii/yii-1.1.12.b600af/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#15 /var/www/yii/yii-1.1.12.b600af/framework/web/CController.php(1146): CAccessControlFilter->filter()
+#16 /var/www/yii/yii-1.1.12.b600af/framework/web/filters/CInlineFilter.php(59): FilmController->filterAccessControl()
+#17 /var/www/yii/yii-1.1.12.b600af/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#18 /var/www/yii/yii-1.1.12.b600af/framework/web/CController.php(292): CFilterChain->run()
+#19 /var/www/yii/yii-1.1.12.b600af/framework/web/CController.php(266): FilmController->runActionWithFilters()
+#20 /var/www/yii/yii-1.1.12.b600af/framework/web/CWebApplication.php(283): FilmController->run()
+#21 /var/www/yii/yii-1.1.12.b600af/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#22 /var/www/yii/yii-1.1.12.b600af/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#23 /var/www/usingziicomp/index.php(13): CWebApplication->run()
+REQUEST_URI=/usingziicomp/index.php?r=film/create
+in /var/www/usingziicomp/protected/views/film/_form.php (38)
+in /var/www/usingziicomp/protected/views/film/create.php (18)
+in /var/www/usingziicomp/protected/controllers/FilmController.php (79)
+2013/03/31 14:37:42 [error] [php] htmlspecialchars(): Invalid multibyte sequence in argument (/var/www/yii/yii-1.1.12.b600af/framework/web/helpers/CHtml.php:85)
+Stack trace:
+#0 /var/www/yii/yii-1.1.12.b600af/framework/utils/CFormatter.php(114): CFormatter->formatText()
+#1 /var/www/yii/yii-1.1.12.b600af/framework/zii/widgets/CDetailView.php(216): CFormatter->format()
+#2 /var/www/yii/yii-1.1.12.b600af/framework/web/CBaseController.php(174): CDetailView->run()
+#3 /var/www/usingziicomp/protected/views/film/view.php(41): FilmController->widget()
+#4 /var/www/yii/yii-1.1.12.b600af/framework/web/CBaseController.php(127): require()
+#5 /var/www/yii/yii-1.1.12.b600af/framework/web/CBaseController.php(96): FilmController->renderInternal()
+#6 /var/www/yii/yii-1.1.12.b600af/framework/web/CController.php(870): FilmController->renderFile()
+#7 /var/www/yii/yii-1.1.12.b600af/framework/web/CController.php(783): FilmController->renderPartial()
+#8 /var/www/usingziicomp/protected/controllers/FilmController.php(56): FilmController->render()
+#9 unknown(0): FilmController->actionView()
+#10 /var/www/yii/yii-1.1.12.b600af/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs()
+#11 /var/www/yii/yii-1.1.12.b600af/framework/web/actions/CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#12 /var/www/yii/yii-1.1.12.b600af/framework/web/CController.php(309): CInlineAction->runWithParams()
+#13 /var/www/yii/yii-1.1.12.b600af/framework/web/filters/CFilterChain.php(134): FilmController->runAction()
+#14 /var/www/yii/yii-1.1.12.b600af/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#15 /var/www/yii/yii-1.1.12.b600af/framework/web/CController.php(1146): CAccessControlFilter->filter()
+#16 /var/www/yii/yii-1.1.12.b600af/framework/web/filters/CInlineFilter.php(59): FilmController->filterAccessControl()
+#17 /var/www/yii/yii-1.1.12.b600af/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#18 /var/www/yii/yii-1.1.12.b600af/framework/web/CController.php(292): CFilterChain->run()
+#19 /var/www/yii/yii-1.1.12.b600af/framework/web/CController.php(266): FilmController->runActionWithFilters()
+#20 /var/www/yii/yii-1.1.12.b600af/framework/web/CWebApplication.php(283): FilmController->run()
+#21 /var/www/yii/yii-1.1.12.b600af/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#22 /var/www/yii/yii-1.1.12.b600af/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#23 /var/www/usingziicomp/index.php(13): CWebApplication->run()
+REQUEST_URI=/usingziicomp/index.php?r=film/view&id=1043
+in /var/www/usingziicomp/protected/views/film/view.php (41)
+in /var/www/usingziicomp/protected/controllers/FilmController.php (56)
+in /var/www/usingziicomp/index.php (13)
+2013/03/31 14:50:10 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '1044' for key 'PRIMARY'. The SQL statement executed was: INSERT INTO `film` (`special_memo`, `rental_duration`, `rental_rate`, `replacement_cost`, `rating`, `title`, `type_of_film`, `introduction_context`, `description`, `release_year`, `language_id`, `original_language_id`, `length`, `special_features`, `last_update`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8, :yp9, :yp10, :yp11, :yp12, :yp13, :yp14).
+in /var/www/usingziicomp/protected/controllers/FilmController.php (73)
+in /var/www/usingziicomp/index.php (13)
+2013/03/31 14:50:10 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '1044' for key 'PRIMARY'. The SQL statement executed was: INSERT INTO `film` (`special_memo`, `rental_duration`, `rental_rate`, `replacement_cost`, `rating`, `title`, `type_of_film`, `introduction_context`, `description`, `release_year`, `language_id`, `original_language_id`, `length`, `special_features`, `last_update`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8, :yp9, :yp10, :yp11, :yp12, :yp13, :yp14)' in /var/www/yii/yii-1.1.12.b600af/framework/db/CDbCommand.php:354
+Stack trace:
+#0 /var/www/yii/yii-1.1.12.b600af/framework/db/ar/CActiveRecord.php(1017): CDbCommand->execute()
+#1 /var/www/yii/yii-1.1.12.b600af/framework/db/ar/CActiveRecord.php(796): CActiveRecord->insert(NULL)
+#2 /var/www/usingziicomp/protected/controllers/FilmController.php(73): CActiveRecord->save()
+#3 /var/www/yii/yii-1.1.12.b600af/framework/web/actions/CInlineAction.php(50): FilmController->actionCreate()
+#4 /var/www/yii/yii-1.1.12.b600af/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#5 /var/www/yii/yii-1.1.12.b600af/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#6 /var/www/yii/yii-1.1.12.b600af/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#7 /var/www/yii/yii-1.1.12.b600af/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#8 /var/www/yii/yii-1.1.12.b600af/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#9 /var/www/yii/yii-1.1.12.b600af/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#10 /var/www/yii/yii-1.1.12.b600af/framework/web/CController.php(292): CFilterChain->run()
+#11 /var/www/yii/yii-1.1.12.b600af/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /var/www/yii/yii-1.1.12.b600af/framework/web/CWebApplication.php(283): CController->run('create')
+#13 /var/www/yii/yii-1.1.12.b600af/framework/web/CWebApplication.php(142): CWebApplication->runController('film/create')
+#14 /var/www/yii/yii-1.1.12.b600af/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#15 /var/www/usingziicomp/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/usingziicomp/index.php?r=film/create
+HTTP_REFERER=http://localhost/usingziicomp/index.php?r=film/create
+---
+2013/04/02 23:58:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "db/grid".' in /var/www/yii/yii-1.1.12.b600af/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /var/www/yii/yii-1.1.12.b600af/framework/web/CWebApplication.php(142): CWebApplication->runController('db/grid')
+#1 /var/www/yii/yii-1.1.12.b600af/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/usingziicomp/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/usingziicomp/index.php?r=db/grid
+---
+2013/04/02 23:58:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "db/array".' in /var/www/yii/yii-1.1.12.b600af/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /var/www/yii/yii-1.1.12.b600af/framework/web/CWebApplication.php(142): CWebApplication->runController('db/array')
+#1 /var/www/yii/yii-1.1.12.b600af/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/usingziicomp/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/usingziicomp/index.php?r=db/array
+---
+2013/04/10 23:10:59 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'sakila.tbl_user' doesn't exist. The SQL statement executed was: SHOW COLUMNS FROM `tbl_user`.
+in /var/www/usingziicomp/index.php (13)
+2013/04/10 23:19:16 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'sakila.user' doesn't exist. The SQL statement executed was: SHOW COLUMNS FROM `user`.
+in /var/www/usingziicomp/index.php (13)
+2013/04/10 23:19:34 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'sakila.tbl_user' doesn't exist. The SQL statement executed was: SHOW COLUMNS FROM `tbl_user`.
+in /var/www/usingziicomp/index.php (13)

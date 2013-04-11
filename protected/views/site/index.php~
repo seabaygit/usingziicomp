@@ -20,7 +20,7 @@ different fashions.</p>
 <li> http://localhost/application/index.php?r=grid/array </li>
 <p> Corresponds to an array that has already been pre-configured in the application </p>
 <li> http://localhost/application/index.php?r=grid/sql </li>
-<p> Corresponds to a direct query in the database, in this case in the table film. </p>
+<p> Corresponds to a direct query in the database, in this case in the table film. </p>--
 </ul>
 
 <?php
