@@ -972,3 +972,268 @@ in /var/www/usingziicomp/index.php (13)
 in /var/www/usingziicomp/index.php (13)
 2013/04/10 23:19:34 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'sakila.tbl_user' doesn't exist. The SQL statement executed was: SHOW COLUMNS FROM `tbl_user`.
 in /var/www/usingziicomp/index.php (13)
+2013/04/11 00:08:26 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: could not find driver' in /var/www/yii/yii-1.1.12.b600af/framework/db/CDbConnection.php:382
+Stack trace:
+#0 /var/www/yii/yii-1.1.12.b600af/framework/db/CDbConnection.php(331): CDbConnection->open()
+#1 /var/www/yii/yii-1.1.12.b600af/framework/db/CDbConnection.php(309): CDbConnection->setActive(true)
+#2 /var/www/yii/yii-1.1.12.b600af/framework/base/CModule.php(388): CDbConnection->init()
+#3 /var/www/yii/yii-1.1.12.b600af/framework/base/CApplication.php(431): CModule->getComponent('db')
+#4 /var/www/yii/yii-1.1.12.b600af/framework/db/ar/CActiveRecord.php(624): CApplication->getDb()
+#5 /var/www/yii/yii-1.1.12.b600af/framework/db/ar/CActiveRecord.php(2311): CActiveRecord->getDbConnection()
+#6 /var/www/yii/yii-1.1.12.b600af/framework/db/ar/CActiveRecord.php(388): CActiveRecordMetaData->__construct(Object(Film))
+#7 /var/www/yii/yii-1.1.12.b600af/framework/web/CActiveDataProvider.php(75): CActiveRecord::model('Film')
+#8 /var/www/usingziicomp/protected/controllers/FilmController.php(125): CActiveDataProvider->__construct('Film')
+#9 /var/www/yii/yii-1.1.12.b600af/framework/web/actions/CInlineAction.php(50): FilmController->actionIndex()
+#10 /var/www/yii/yii-1.1.12.b600af/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#11 /var/www/yii/yii-1.1.12.b600af/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#12 /var/www/yii/yii-1.1.12.b600af/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#13 /var/www/yii/yii-1.1.12.b600af/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#14 /var/www/yii/yii-1.1.12.b600af/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#15 /var/www/yii/yii-1.1.12.b600af/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#16 /var/www/yii/yii-1.1.12.b600af/framework/web/CController.php(292): CFilterChain->run()
+#17 /var/www/yii/yii-1.1.12.b600af/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 /var/www/yii/yii-1.1.12.b600af/framework/web/CWebApplication.php(283): CController->run('')
+#19 /var/www/yii/yii-1.1.12.b600af/framework/web/CWebApplication.php(142): CWebApplication->runController('film')
+#20 /var/www/yii/yii-1.1.12.b600af/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#21 /var/www/usingziicomp/index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/usingziicomp/index.php?r=film
+---
+2013/04/11 00:08:44 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: could not find driver' in /var/www/yii/yii-1.1.12.b600af/framework/db/CDbConnection.php:382
+Stack trace:
+#0 /var/www/yii/yii-1.1.12.b600af/framework/db/CDbConnection.php(331): CDbConnection->open()
+#1 /var/www/yii/yii-1.1.12.b600af/framework/db/CDbConnection.php(309): CDbConnection->setActive(true)
+#2 /var/www/yii/yii-1.1.12.b600af/framework/base/CModule.php(388): CDbConnection->init()
+#3 /var/www/yii/yii-1.1.12.b600af/framework/base/CModule.php(104): CModule->getComponent('db')
+#4 /var/www/yii/yii-1.1.12.b600af/framework/gii/generators/model/ModelCode.php(57): CModule->__get('db')
+#5 /var/www/yii/yii-1.1.12.b600af/framework/web/CFormModel.php(40): ModelCode->init()
+#6 /var/www/yii/yii-1.1.12.b600af/framework/gii/CCodeGenerator.php(154): CFormModel->__construct()
+#7 /var/www/yii/yii-1.1.12.b600af/framework/gii/CCodeGenerator.php(64): CCodeGenerator->prepare()
+#8 /var/www/yii/yii-1.1.12.b600af/framework/web/actions/CInlineAction.php(50): CCodeGenerator->actionIndex()
+#9 /var/www/yii/yii-1.1.12.b600af/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#10 /var/www/yii/yii-1.1.12.b600af/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#11 /var/www/yii/yii-1.1.12.b600af/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /var/www/yii/yii-1.1.12.b600af/framework/web/CWebApplication.php(283): CController->run('')
+#13 /var/www/yii/yii-1.1.12.b600af/framework/web/CWebApplication.php(142): CWebApplication->runController('gii/model')
+#14 /var/www/yii/yii-1.1.12.b600af/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#15 /var/www/usingziicomp/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/usingziicomp/index.php?r=gii/model
+HTTP_REFERER=http://localhost/usingziicomp/index.php?r=gii/default/index
+---
+2013/04/11 00:08:51 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: could not find driver' in /var/www/yii/yii-1.1.12.b600af/framework/db/CDbConnection.php:382
+Stack trace:
+#0 /var/www/yii/yii-1.1.12.b600af/framework/db/CDbConnection.php(331): CDbConnection->open()
+#1 /var/www/yii/yii-1.1.12.b600af/framework/db/CDbConnection.php(309): CDbConnection->setActive(true)
+#2 /var/www/yii/yii-1.1.12.b600af/framework/base/CModule.php(388): CDbConnection->init()
+#3 /var/www/yii/yii-1.1.12.b600af/framework/base/CModule.php(104): CModule->getComponent('db')
+#4 /var/www/yii/yii-1.1.12.b600af/framework/gii/generators/crud/CrudCode.php(44): CModule->__get('db')
+#5 /var/www/yii/yii-1.1.12.b600af/framework/web/CFormModel.php(40): CrudCode->init()
+#6 /var/www/yii/yii-1.1.12.b600af/framework/gii/CCodeGenerator.php(154): CFormModel->__construct()
+#7 /var/www/yii/yii-1.1.12.b600af/framework/gii/CCodeGenerator.php(64): CCodeGenerator->prepare()
+#8 /var/www/yii/yii-1.1.12.b600af/framework/web/actions/CInlineAction.php(50): CCodeGenerator->actionIndex()
+#9 /var/www/yii/yii-1.1.12.b600af/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#10 /var/www/yii/yii-1.1.12.b600af/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#11 /var/www/yii/yii-1.1.12.b600af/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /var/www/yii/yii-1.1.12.b600af/framework/web/CWebApplication.php(283): CController->run('')
+#13 /var/www/yii/yii-1.1.12.b600af/framework/web/CWebApplication.php(142): CWebApplication->runController('gii/crud')
+#14 /var/www/yii/yii-1.1.12.b600af/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#15 /var/www/usingziicomp/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/usingziicomp/index.php?r=gii/crud
+HTTP_REFERER=http://localhost/usingziicomp/index.php?r=gii/default/index
+---
+2013/04/11 00:08:57 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: could not find driver' in /var/www/yii/yii-1.1.12.b600af/framework/db/CDbConnection.php:382
+Stack trace:
+#0 /var/www/yii/yii-1.1.12.b600af/framework/db/CDbConnection.php(331): CDbConnection->open()
+#1 /var/www/yii/yii-1.1.12.b600af/framework/db/CDbConnection.php(309): CDbConnection->setActive(true)
+#2 /var/www/yii/yii-1.1.12.b600af/framework/base/CModule.php(388): CDbConnection->init()
+#3 /var/www/yii/yii-1.1.12.b600af/framework/base/CModule.php(104): CModule->getComponent('db')
+#4 /var/www/yii/yii-1.1.12.b600af/framework/gii/generators/model/ModelCode.php(57): CModule->__get('db')
+#5 /var/www/yii/yii-1.1.12.b600af/framework/web/CFormModel.php(40): ModelCode->init()
+#6 /var/www/yii/yii-1.1.12.b600af/framework/gii/CCodeGenerator.php(154): CFormModel->__construct()
+#7 /var/www/yii/yii-1.1.12.b600af/framework/gii/CCodeGenerator.php(64): CCodeGenerator->prepare()
+#8 /var/www/yii/yii-1.1.12.b600af/framework/web/actions/CInlineAction.php(50): CCodeGenerator->actionIndex()
+#9 /var/www/yii/yii-1.1.12.b600af/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#10 /var/www/yii/yii-1.1.12.b600af/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#11 /var/www/yii/yii-1.1.12.b600af/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /var/www/yii/yii-1.1.12.b600af/framework/web/CWebApplication.php(283): CController->run('')
+#13 /var/www/yii/yii-1.1.12.b600af/framework/web/CWebApplication.php(142): CWebApplication->runController('gii/model')
+#14 /var/www/yii/yii-1.1.12.b600af/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#15 /var/www/usingziicomp/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/usingziicomp/index.php?r=gii/model
+HTTP_REFERER=http://localhost/usingziicomp/index.php?r=gii/default/index
+---
+2013/04/11 00:10:56 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: could not find driver' in /var/www/yii/yii-1.1.12.b600af/framework/db/CDbConnection.php:382
+Stack trace:
+#0 /var/www/yii/yii-1.1.12.b600af/framework/db/CDbConnection.php(331): CDbConnection->open()
+#1 /var/www/yii/yii-1.1.12.b600af/framework/db/CDbConnection.php(309): CDbConnection->setActive(true)
+#2 /var/www/yii/yii-1.1.12.b600af/framework/base/CModule.php(388): CDbConnection->init()
+#3 /var/www/yii/yii-1.1.12.b600af/framework/base/CModule.php(104): CModule->getComponent('db')
+#4 /var/www/yii/yii-1.1.12.b600af/framework/gii/generators/crud/CrudCode.php(44): CModule->__get('db')
+#5 /var/www/yii/yii-1.1.12.b600af/framework/web/CFormModel.php(40): CrudCode->init()
+#6 /var/www/yii/yii-1.1.12.b600af/framework/gii/CCodeGenerator.php(154): CFormModel->__construct()
+#7 /var/www/yii/yii-1.1.12.b600af/framework/gii/CCodeGenerator.php(64): CCodeGenerator->prepare()
+#8 /var/www/yii/yii-1.1.12.b600af/framework/web/actions/CInlineAction.php(50): CCodeGenerator->actionIndex()
+#9 /var/www/yii/yii-1.1.12.b600af/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#10 /var/www/yii/yii-1.1.12.b600af/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#11 /var/www/yii/yii-1.1.12.b600af/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /var/www/yii/yii-1.1.12.b600af/framework/web/CWebApplication.php(283): CController->run('')
+#13 /var/www/yii/yii-1.1.12.b600af/framework/web/CWebApplication.php(142): CWebApplication->runController('gii/crud')
+#14 /var/www/yii/yii-1.1.12.b600af/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#15 /var/www/usingziicomp/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/usingziicomp/index.php?r=gii/crud
+HTTP_REFERER=http://localhost/usingziicomp/index.php?r=gii/default/index
+---
+2013/04/11 00:11:46 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: could not find driver' in /var/www/yii/yii-1.1.12.b600af/framework/db/CDbConnection.php:382
+Stack trace:
+#0 /var/www/yii/yii-1.1.12.b600af/framework/db/CDbConnection.php(331): CDbConnection->open()
+#1 /var/www/yii/yii-1.1.12.b600af/framework/db/CDbConnection.php(309): CDbConnection->setActive(true)
+#2 /var/www/yii/yii-1.1.12.b600af/framework/base/CModule.php(388): CDbConnection->init()
+#3 /var/www/yii/yii-1.1.12.b600af/framework/base/CModule.php(104): CModule->getComponent('db')
+#4 /var/www/yii/yii-1.1.12.b600af/framework/gii/generators/model/ModelCode.php(57): CModule->__get('db')
+#5 /var/www/yii/yii-1.1.12.b600af/framework/web/CFormModel.php(40): ModelCode->init()
+#6 /var/www/yii/yii-1.1.12.b600af/framework/gii/CCodeGenerator.php(154): CFormModel->__construct()
+#7 /var/www/yii/yii-1.1.12.b600af/framework/gii/CCodeGenerator.php(64): CCodeGenerator->prepare()
+#8 /var/www/yii/yii-1.1.12.b600af/framework/web/actions/CInlineAction.php(50): CCodeGenerator->actionIndex()
+#9 /var/www/yii/yii-1.1.12.b600af/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#10 /var/www/yii/yii-1.1.12.b600af/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#11 /var/www/yii/yii-1.1.12.b600af/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /var/www/yii/yii-1.1.12.b600af/framework/web/CWebApplication.php(283): CController->run('')
+#13 /var/www/yii/yii-1.1.12.b600af/framework/web/CWebApplication.php(142): CWebApplication->runController('gii/model')
+#14 /var/www/yii/yii-1.1.12.b600af/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#15 /var/www/usingziicomp/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/usingziicomp/index.php?r=gii/model
+HTTP_REFERER=http://localhost/usingziicomp/index.php?r=gii/
+---
+2013/04/11 00:13:29 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: could not find driver' in /var/www/yii/yii-1.1.12.b600af/framework/db/CDbConnection.php:382
+Stack trace:
+#0 /var/www/yii/yii-1.1.12.b600af/framework/db/CDbConnection.php(331): CDbConnection->open()
+#1 /var/www/yii/yii-1.1.12.b600af/framework/db/CDbConnection.php(309): CDbConnection->setActive(true)
+#2 /var/www/yii/yii-1.1.12.b600af/framework/base/CModule.php(388): CDbConnection->init()
+#3 /var/www/yii/yii-1.1.12.b600af/framework/base/CModule.php(104): CModule->getComponent('db')
+#4 /var/www/yii/yii-1.1.12.b600af/framework/gii/generators/crud/CrudCode.php(44): CModule->__get('db')
+#5 /var/www/yii/yii-1.1.12.b600af/framework/web/CFormModel.php(40): CrudCode->init()
+#6 /var/www/yii/yii-1.1.12.b600af/framework/gii/CCodeGenerator.php(154): CFormModel->__construct()
+#7 /var/www/yii/yii-1.1.12.b600af/framework/gii/CCodeGenerator.php(64): CCodeGenerator->prepare()
+#8 /var/www/yii/yii-1.1.12.b600af/framework/web/actions/CInlineAction.php(50): CCodeGenerator->actionIndex()
+#9 /var/www/yii/yii-1.1.12.b600af/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#10 /var/www/yii/yii-1.1.12.b600af/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#11 /var/www/yii/yii-1.1.12.b600af/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /var/www/yii/yii-1.1.12.b600af/framework/web/CWebApplication.php(283): CController->run('')
+#13 /var/www/yii/yii-1.1.12.b600af/framework/web/CWebApplication.php(142): CWebApplication->runController('gii/crud')
+#14 /var/www/yii/yii-1.1.12.b600af/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#15 /var/www/usingziicomp/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/usingziicomp/index.php?r=gii/crud
+HTTP_REFERER=http://localhost/usingziicomp/index.php?r=gii/default/index
+---
+2013/04/11 00:13:32 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: could not find driver' in /var/www/yii/yii-1.1.12.b600af/framework/db/CDbConnection.php:382
+Stack trace:
+#0 /var/www/yii/yii-1.1.12.b600af/framework/db/CDbConnection.php(331): CDbConnection->open()
+#1 /var/www/yii/yii-1.1.12.b600af/framework/db/CDbConnection.php(309): CDbConnection->setActive(true)
+#2 /var/www/yii/yii-1.1.12.b600af/framework/base/CModule.php(388): CDbConnection->init()
+#3 /var/www/yii/yii-1.1.12.b600af/framework/base/CModule.php(104): CModule->getComponent('db')
+#4 /var/www/yii/yii-1.1.12.b600af/framework/gii/generators/crud/CrudCode.php(44): CModule->__get('db')
+#5 /var/www/yii/yii-1.1.12.b600af/framework/web/CFormModel.php(40): CrudCode->init()
+#6 /var/www/yii/yii-1.1.12.b600af/framework/gii/CCodeGenerator.php(154): CFormModel->__construct()
+#7 /var/www/yii/yii-1.1.12.b600af/framework/gii/CCodeGenerator.php(64): CCodeGenerator->prepare()
+#8 /var/www/yii/yii-1.1.12.b600af/framework/web/actions/CInlineAction.php(50): CCodeGenerator->actionIndex()
+#9 /var/www/yii/yii-1.1.12.b600af/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#10 /var/www/yii/yii-1.1.12.b600af/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#11 /var/www/yii/yii-1.1.12.b600af/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /var/www/yii/yii-1.1.12.b600af/framework/web/CWebApplication.php(283): CController->run('')
+#13 /var/www/yii/yii-1.1.12.b600af/framework/web/CWebApplication.php(142): CWebApplication->runController('gii/crud')
+#14 /var/www/yii/yii-1.1.12.b600af/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#15 /var/www/usingziicomp/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/usingziicomp/index.php?r=gii/crud
+HTTP_REFERER=http://localhost/usingziicomp/index.php?r=gii/default/index
+---
+2013/05/06 02:12:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in /var/www/yii/yii-1.1.12.b600af/framework/web/CController.php:484
+Stack trace:
+#0 /var/www/yii/yii-1.1.12.b600af/framework/web/CController.php(271): CController->missingAction('')
+#1 /var/www/yii/yii-1.1.12.b600af/framework/web/CWebApplication.php(283): CController->run('')
+#2 /var/www/yii/yii-1.1.12.b600af/framework/web/CWebApplication.php(142): CWebApplication->runController('grid/')
+#3 /var/www/yii/yii-1.1.12.b600af/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/usingziicomp/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/usingziicomp/index.php?r=grid/
+---
+2013/05/07 17:33:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in /var/www/yii/yii-1.1.12.b600af/framework/web/CController.php:484
+Stack trace:
+#0 /var/www/yii/yii-1.1.12.b600af/framework/web/CController.php(271): CController->missingAction('')
+#1 /var/www/yii/yii-1.1.12.b600af/framework/web/CWebApplication.php(283): CController->run('')
+#2 /var/www/yii/yii-1.1.12.b600af/framework/web/CWebApplication.php(142): CWebApplication->runController('grid/')
+#3 /var/www/yii/yii-1.1.12.b600af/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/usingziicomp/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/usingziicomp/index.php?r=grid/
+---
+2013/05/07 18:07:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "sqlbyyear".' in /var/www/yii/yii-1.1.12.b600af/framework/web/CController.php:484
+Stack trace:
+#0 /var/www/yii/yii-1.1.12.b600af/framework/web/CController.php(271): CController->missingAction('sqlbyyear')
+#1 /var/www/yii/yii-1.1.12.b600af/framework/web/CWebApplication.php(283): CController->run('sqlbyyear')
+#2 /var/www/yii/yii-1.1.12.b600af/framework/web/CWebApplication.php(142): CWebApplication->runController('grid/sqlbyyear')
+#3 /var/www/yii/yii-1.1.12.b600af/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/usingziicomp/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/usingziicomp/index.php?r=grid/sqlbyyear
+HTTP_REFERER=http://localhost/usingziicomp/index.php?r=site/index
+---
+2013/05/07 18:07:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "sqlbyyear".' in /var/www/yii/yii-1.1.12.b600af/framework/web/CController.php:484
+Stack trace:
+#0 /var/www/yii/yii-1.1.12.b600af/framework/web/CController.php(271): CController->missingAction('sqlbyyear')
+#1 /var/www/yii/yii-1.1.12.b600af/framework/web/CWebApplication.php(283): CController->run('sqlbyyear')
+#2 /var/www/yii/yii-1.1.12.b600af/framework/web/CWebApplication.php(142): CWebApplication->runController('grid/sqlbyyear')
+#3 /var/www/yii/yii-1.1.12.b600af/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/usingziicomp/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/usingziicomp/index.php?r=grid/sqlbyyear
+HTTP_REFERER=http://localhost/usingziicomp/index.php?r=site/index
+---
+2013/05/07 18:48:47 [error] [exception.CException] exception 'CException' with message 'SiteController contains improperly nested widget tags in its view "/var/www/usingziicomp/protected/views/site/index.php". A CContentDecorator widget does not have an endWidget() call.' in /var/www/yii/yii-1.1.12.b600af/framework/web/CBaseController.php:102
+Stack trace:
+#0 /var/www/yii/yii-1.1.12.b600af/framework/web/CController.php(870): CBaseController->renderFile('/var/www/usingz...', NULL, true)
+#1 /var/www/yii/yii-1.1.12.b600af/framework/web/CController.php(783): CController->renderPartial('index', NULL, true)
+#2 /var/www/usingziicomp/protected/controllers/SiteController.php(32): CController->render('index')
+#3 /var/www/yii/yii-1.1.12.b600af/framework/web/actions/CInlineAction.php(50): SiteController->actionIndex()
+#4 /var/www/yii/yii-1.1.12.b600af/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#5 /var/www/yii/yii-1.1.12.b600af/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#6 /var/www/yii/yii-1.1.12.b600af/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/yii/yii-1.1.12.b600af/framework/web/CWebApplication.php(283): CController->run('')
+#8 /var/www/yii/yii-1.1.12.b600af/framework/web/CWebApplication.php(142): CWebApplication->runController('')
+#9 /var/www/yii/yii-1.1.12.b600af/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /var/www/usingziicomp/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/usingziicomp/
+---
+2013/05/07 18:51:20 [error] [exception.CException] exception 'CException' with message 'SiteController contains improperly nested widget tags in its view "/var/www/usingziicomp/protected/views/site/index.php". A CContentDecorator widget does not have an endWidget() call.' in /var/www/yii/yii-1.1.12.b600af/framework/web/CBaseController.php:102
+Stack trace:
+#0 /var/www/yii/yii-1.1.12.b600af/framework/web/CController.php(870): CBaseController->renderFile('/var/www/usingz...', NULL, true)
+#1 /var/www/yii/yii-1.1.12.b600af/framework/web/CController.php(783): CController->renderPartial('index', NULL, true)
+#2 /var/www/usingziicomp/protected/controllers/SiteController.php(32): CController->render('index')
+#3 /var/www/yii/yii-1.1.12.b600af/framework/web/actions/CInlineAction.php(50): SiteController->actionIndex()
+#4 /var/www/yii/yii-1.1.12.b600af/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#5 /var/www/yii/yii-1.1.12.b600af/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#6 /var/www/yii/yii-1.1.12.b600af/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/yii/yii-1.1.12.b600af/framework/web/CWebApplication.php(283): CController->run('')
+#8 /var/www/yii/yii-1.1.12.b600af/framework/web/CWebApplication.php(142): CWebApplication->runController('')
+#9 /var/www/yii/yii-1.1.12.b600af/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /var/www/usingziicomp/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/usingziicomp/
+---
+2013/05/09 23:18:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "customer".' in /var/www/yii/yii-1.1.12.b600af/framework/web/CController.php:484
+Stack trace:
+#0 /var/www/yii/yii-1.1.12.b600af/framework/web/CController.php(271): CController->missingAction('customer')
+#1 /var/www/yii/yii-1.1.12.b600af/framework/web/CWebApplication.php(283): CController->run('customer')
+#2 /var/www/yii/yii-1.1.12.b600af/framework/web/CWebApplication.php(142): CWebApplication->runController('grid/customer')
+#3 /var/www/yii/yii-1.1.12.b600af/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/usingziicomp/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/usingziicomp/index.php?r=grid/customer
+---

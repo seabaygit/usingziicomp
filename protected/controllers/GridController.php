@@ -138,4 +138,46 @@ class GridController extends Controller
 			'dataProvider' => $dataProvider,
 		));
 	}
+	
+	public function actionSQLBasics()
+	{
+		$count=Yii::app()->db->createCommand('SELECT COUNT(*) FROM film')->queryScalar();
+		$sql='SELECT film_id, title, description,special_memo FROM film ORDER BY film_id';
+		$dataProvider=new CSqlDataProvider($sql, array(
+			'keyField'=>'film_id',
+			'totalItemCount'=>$count,
+			'sort'=>array(
+				'attributes'=>array('title' ),
+				'defaultOrder'=>array('title'=>true),
+    		),
+    		'pagination'=>array(
+        		'pageSize'=>10,
+    		),
+		));
+
+		$this->render('index', array(
+			'dataProvider' => $dataProvider,
+		));
+	}
+	
+		public function actionSQLByYear()
+	{
+		$count=Yii::app()->db->createCommand('SELECT COUNT(*) FROM film')->queryScalar();
+		$sql='SELECT film_id, title, description,special_memo FROM film ORDER BY release_year DESC';
+		$dataProvider=new CSqlDataProvider($sql, array(
+			'keyField'=>'film_id',
+			'totalItemCount'=>$count,
+			'sort'=>array(
+				'attributes'=>array('title' ),
+				'defaultOrder'=>array('title'=>true),
+    		),
+    		'pagination'=>array(
+        		'pageSize'=>10,
+    		),
+		));
+
+		$this->render('index', array(
+			'dataProvider' => $dataProvider,
+		));
+	}
 }
